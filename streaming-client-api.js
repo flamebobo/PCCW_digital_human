@@ -14,6 +14,9 @@ let streamId;
 let sessionId;
 let sessionClientAnswer;
 
+// 参数设置：
+let selectedPresenterPosterUrl = '';
+
 // 获取DOM元素
 const talkVideo = document.getElementById('talk-video');
 talkVideo.setAttribute('playsinline', '');
@@ -29,6 +32,9 @@ connectButton.onclick = async () => {
   if (peerConnection && peerConnection.connectionState === 'connected') {
     return;
   }
+  // 从connectButton的data属性中获取source_url
+  const sourceUrl = connectButton.getAttribute('data-source-url') || "https://file.pccwhq.com/flame/china-avc.png";
+
   // 停止所有流并关闭现有的peer连接。
   stopAllStreams();
   closePC();
@@ -38,9 +44,10 @@ connectButton.onclick = async () => {
     method: 'POST',
     headers: {'Authorization': `Basic ${DID_API.key}`, 'Content-Type': 'application/json'},
     body: JSON.stringify({
-      source_url: "https://file.pccwhq.com/flame/china-avc.png"
+      source_url: sourceUrl // 使用选中的演示者的poster URL
     }),
   });
+
 
 
   const { id: newStreamId, offer, ice_servers: iceServers, session_id: newSessionId } = await sessionResponse.json()
@@ -64,6 +71,97 @@ connectButton.onclick = async () => {
     });
 };
 
+document.addEventListener('DOMContentLoaded', () => {
+  loadPresenters();
+
+
+  // 绑定关闭按钮事件
+  document.getElementById('close-btn').addEventListener('click', function() {
+    closeSidebar();
+  });
+});
+
+async function loadPresenters() {
+  // Assuming the image.json is at the same level as your HTML file
+  const response = await fetch('./images.json');
+  let presenters = await response.json();
+
+  // Reverse the array to display presenters in descending order
+  presenters = presenters.reverse();
+
+  // Select the presenter list element
+  const presenterList = document.getElementById('presenter-list');
+  presenterList.innerHTML = ''; // Clear existing presenters
+
+  // Create presenter elements
+  presenters.forEach(presenter => {
+    const presenterElement = document.createElement('div');
+    presenterElement.classList.add('presenter');
+    presenterElement.innerHTML = `<img src="${presenter.thumbnail}" alt="${presenter.name}" data-poster="${presenter.poster}" data-name="${presenter.name}">`;
+    presenterElement.addEventListener('click', function() {
+      selectedPresenterPosterUrl = this.querySelector('img').dataset.poster;
+      connectButton.setAttribute('data-source-url', selectedPresenterPosterUrl);
+      // 可以在这里直接更新当前演示者的显示
+      document.getElementById('current-presenter').src = selectedPresenterPosterUrl;
+      // 更新视频标题
+      document.querySelector('.video-title').textContent = this.querySelector('img').dataset.name;
+    });
+
+    presenterList.appendChild(presenterElement);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  // ... loadPresenters and other initialization code ...
+
+  // Bind event listeners to the new buttons
+  document.getElementById('confirm-button').addEventListener('click', () => {
+    // Set the selected presenter's poster URL to the connectButton's data attribute
+    const connectButton = document.getElementById('connect-button');
+    connectButton.setAttribute('data-source-url', selectedPresenterPosterUrl);
+    // You might also want to trigger the connectButton's click event
+    // connectButton.click();
+    closeSidebar(); // Close the sidebar upon confirmation
+  });
+
+  document.getElementById('cancel-button').addEventListener('click', () => {
+    closeSidebar(); // Just close the sidebar for cancel
+  });
+
+  // Emotion options['neutral', 'happy', 'surprise', 'serious'];
+  const emotions = {'neutral': '中性', 'happy':'开心', 'surprise': '惊喜', 'serious':'严肃'};
+  const emotionOptionsContainer = document.getElementById('emotion-options');
+  Object.keys(emotions).forEach(emotionKey => createOption(emotionOptionsContainer, emotions[emotionKey], emotionKey));
+
+  // Voice options
+  const voices = {'zh-HK-HiuMaanNeural': '粤语小曼', 'zh-cn-XiaomoNeural': '中文小沫'};
+  const voiceOptionsContainer = document.getElementById('voice-options');
+  Object.keys(voices).forEach(voiceKey => createOption(voiceOptionsContainer, voices[voiceKey], voiceKey));
+
+  const sessions = {'savaSession': '保存会话', 'instantSession': '瞬时会话'};
+  const sessionOptionsContainer = document.getElementById('session-options');
+  Object.keys(sessions).forEach(sessionKey => createOption(sessionOptionsContainer, sessions[sessionKey], sessionKey));
+
+});
+
+function createOption(container, label, value = label) {
+  const optionDiv = document.createElement('div');
+  optionDiv.classList.add('option');
+  optionDiv.textContent = label;
+  optionDiv.setAttribute('data-value', value);
+
+  // Event listener for option selection
+  optionDiv.addEventListener('click', function() {
+    // Deselect all options
+    container.querySelectorAll('.option').forEach(opt => opt.classList.remove('selected'));
+    // Select the clicked one
+    this.classList.add('selected');
+  });
+
+  container.appendChild(optionDiv);
+}
+
+
 // 侧边栏开关事件监听
 document.getElementById("sidebar-toggle").addEventListener("click", function() {
   document.getElementById("sidebar").style.right = "0";
@@ -71,10 +169,11 @@ document.getElementById("sidebar-toggle").addEventListener("click", function() {
 });
 
 // 关闭侧边栏事件监听
-document.getElementById("close-sidebar").addEventListener("click", function() {
-  document.getElementById("sidebar").style.right = "-30vw";
-  document.getElementById("main-content").classList.remove("reduce");
-});
+// 关闭侧边栏的函数
+function closeSidebar() {
+  document.getElementById('sidebar').style.right = '-30vw'; // 或者使用您的抽屉宽度
+  document.getElementById('main-content').classList.remove('reduce');
+}
 
 
 
@@ -100,30 +199,27 @@ document.getElementById('user-input-field').addEventListener('keypress', async f
 
 
 // 假设有一个全局变量来保存对话历史
-let conversationHistory = '';
+let conversationHistory = [];
 
 // 生成聊天回应的函数
 async function generateChatResponse(userInput) {
-  const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-003/completions';
-  const apiKey = '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'; // 请确保使用自己的 API 密钥，并且不要公开暴露
+  const apiUrl = 'https://api.openai.com/v1/chat/completions'; // 使用聊天模型的正确端点
+  const apiKey = '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'; // 请使用您自己的API密钥，并确保不要公开暴露
+
+  // 将用户的输入添加到对话历史
+  conversationHistory.push({ role: "user", content: userInput });
+
   const settings = {
-    max_tokens: 4000,
+    max_tokens: 150,
     temperature: 0.5,
     top_p: 1,
-    stop: ['\n'],
-  }
-  // 将用户输入添加到对话历史中，确保在每次请求之间维持上下文
-  conversationHistory += `User: ${userInput}\nAI:`;
+    frequency_penalty: 0,
+    presence_penalty: 0,
+  };
 
   const data = {
-    prompt: conversationHistory,
-    max_tokens: settings.max_tokens || 150, // 默认值
-    temperature: settings.temperature || 0.7, // 控制结果的随机性
-    top_p: settings.top_p || 1, // 控制采样的多样性
-    frequency_penalty: settings.frequency_penalty || 0, // 减少重复
-    presence_penalty: settings.presence_penalty || 0, // 提高新颖性
-    stop: settings.stop || ["\n", " User:", " AI:"], // 停止符
-    // 如果需要，可以添加更多参数
+    model: "gpt-3.5-turbo",
+    messages: conversationHistory // 聊天模型期望的消息格式
   };
 
   try {
@@ -142,9 +238,8 @@ async function generateChatResponse(userInput) {
 
     const responseData = await response.json();
 
-    // 添加 AI 的响应到对话历史中
-    const aiText = responseData.choices[0].text;
-    conversationHistory += aiText + '\n';
+    // 获取AI的响应文本
+    const aiText = responseData.choices[0].message.content; // 聊天模型的响应在message.content字段内
 
     return aiText;
   } catch (error) {
@@ -152,6 +247,8 @@ async function generateChatResponse(userInput) {
     return `I'm sorry, I wasn't able to process that.`;
   }
 }
+
+
 
 
 // //################################
@@ -173,10 +270,6 @@ destroyButton.onclick = async () => {
 // 如果peer connection状态是稳定的或已连接，则使用GPT-3生成回应
 async function getMessageFromGPT(userInput) {
   if (peerConnection?.signalingState === 'stable' || peerConnection?.iceConnectionState === 'connected') {
-    // Get the user input from the text input field
-    // const userInput = document.getElementById('user-input-field').value;
-
-    // Use OpenAI's GPT-3 to generate a response
     // 假设 generateChatResponse 是一个函数，能够异步地从 GPT-3 获取响应
     const chatResponse = await generateChatResponse(userInput);
     var chatBox = document.getElementById('chat-box');
@@ -191,58 +284,59 @@ async function getMessageFromGPT(userInput) {
     chatBox.appendChild(receivedMessageElement);
     chatBox.scrollTop = chatBox.scrollHeight;
 
-    const talkResponse = await fetch(`${DID_API.url}/talks/streams/${streamId}`, {
-      method: 'POST',
-      headers: { Authorization: `Basic ${DID_API.key}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        script: {
-          type: 'text',
-          subtitles: 'false',
-          /**
-           * 中文：zh-cn-XiaomoNeural
-           * 粤语：zh-HK-HiuMaanNeural
-           */
-          provider: { type: 'microsoft', voice_id: 'zh-cn-XiaomoNeural' },
-          ssml: true,
-          input: chatResponse, // Use the GPT-3 response as the input value
-        },
-        config: {
-          fluent: true,
-          pad_audio: 0,
-          driver_expressions: {
-            /**
-             * 表情：
-             * neutral	默认的表达开始与每一个视频
-             * happy	使得头微笑，影响的嘴和眼睛
-             * surprise	使身提出了自己的眉毛和更广泛的打开他们的嘴
-             * serious	使得头公司的眉毛和锻炼的嘴唇创造一个更严肃的口气
-             */
-            expressions: [{ expression: 'happy', start_frame: 0, intensity: 0 }],
-            transition_frames: 0,
-          },
-          align_driver: true,
-          align_expand_factor: 0,
-          auto_match: true,
-          motion_factor: 0,
-          normalization_factor: 0,
-          sharpen: true,
-          stitch: true,
-          result_format: 'mp4',
-        },
-        // driver_url	描述
-        // bank://nostalgia	温柔和的缓慢运动
-        // bank://fun	时髦的运动与有趣的脸部表情
-        // bank://dance	跳舞头动作
-        // bank://classics	唱运动|作出一定要设置 "mute": false
-        // bank://subtle	细微的动作|工作最多的面孔，彼此靠近在一个单一的图像
-        // bank://stitch	最好的作品时 "stitch": true
-        'driver_url': 'bank://lively/',
-        'session_id': sessionId,
-      }),
-    });
+    // 调用did
+    // getMessageFromDID(chatResponse);
   }
 }
+async function getMessageFromDID(chatResponse){
+  const talkResponse = await fetch(`${DID_API.url}/talks/streams/${streamId}`, {
+    method: 'POST',
+    headers: { Authorization: `Basic ${DID_API.key}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      script: {
+        type: 'text',
+        subtitles: 'false',
+        /**
+         * 中文：zh-cn-XiaomoNeural
+         * 粤语：zh-HK-HiuMaanNeural
+         */
+        provider: { type: 'microsoft', voice_id: 'zh-cn-XiaomoNeural' },
+        ssml: true,
+        input: chatResponse, // Use the GPT-3 response as the input value
+      },
+      config: {
+        fluent: true,
+        pad_audio: 0,
+        driver_expressions: {
+          expressions: [{ expression: 'neutral', start_frame: 0, intensity: 0 }],
+          transition_frames: 0
+        },
+        align_driver: true,
+        align_expand_factor: 0,
+        auto_match: true,
+        motion_factor: 0,
+        normalization_factor: 0,
+        sharpen: true,
+        stitch: true,
+        result_format: 'mp4'
+      },
+      // 必须的
+      'config': {
+        'stitch': true,
+      },
+      // driver_url	描述
+      // bank://nostalgia	温柔和的缓慢运动
+      // bank://fun	时髦的运动与有趣的脸部表情
+      // bank://dance	跳舞头动作
+      // bank://classics	唱运动|作出一定要设置 "mute": false
+      // bank://subtle	细微的动作|工作最多的面孔，彼此靠近在一个单一的图像
+      // bank://stitch	最好的作品时 "stitch": true
 
+      'driver_url': 'bank://lively/',
+      'session_id': sessionId,
+    }),
+  });
+}
 // ICE收集状态变化的回调函数
 function onIceGatheringStateChange() {
   // 更新状态显示

@@ -188,6 +188,7 @@
       float: right;
       margin-bottom: 10px;
       clear: both;
+      text-align: left; /* 文本靠左对齐 */
     }
     .clearfix::after {
       content: "";
@@ -197,16 +198,17 @@
 
     .message-received {
       max-width: 60%;
-      margin-left: 10px;
+      margin-left: 0; /* 靠左排列，去除左边距 */
       background-color: #FFFFFF; /* 白色气泡 */
       color: #000000; /* 黑色文本 */
       padding: 10px;
       border-radius: 20px;
       word-wrap: break-word;
       display: block;
-      float: left;
+      float: left; /* 浮动移除，改用block */
       margin-bottom: 10px;
       clear: both;
+      text-align: left; /* 文本靠左对齐 */
     }
 
     /* 抽屉按钮样式 */
@@ -245,6 +247,127 @@
       right: 10px;
       cursor: pointer;
       font-size: 30px;
+    }
+
+    /* Additional styles for new elements */
+    .video-presenter-display img {
+      width: 100%; /* Adjust as needed */
+      margin-bottom: 20px; /* Spacing between the image and the title */
+    }
+
+    .video-title {
+      color: #FFFFFF;
+      text-align: center;
+      margin-bottom: 20px; /* Spacing between the title and the presenter selection */
+    }
+
+    .presenter-selection h3 {
+      color: #FFFFFF;
+      margin-bottom: 10px;
+      text-align: left; /* 标题靠左对齐 */
+    }
+
+    .presenter-list {
+      white-space: nowrap;
+      overflow-x: auto;
+      margin-bottom: 20px;
+    }
+
+    .presenter-list .presenter {
+      display: inline-block;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .presenter-list .presenter img {
+      width: 80px; /* Adjust as needed */
+      height: 80px; /* Adjust as needed */
+      border-radius: 50%;
+      border: 2px solid #FFFFFF;
+    }
+
+
+    /* 自定义上传按钮样式 */
+    #add-presenter {
+      font-size: 24px; /* 加号大小 */
+      color: #fff; /* 加号颜色 */
+    }
+    /* 关闭按钮样式 */
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px; /* 大小可根据需要调整 */
+      color: #ffffff; /* 颜色可根据需要调整 */
+      cursor: pointer;
+      z-index: 10; /* 确保按钮在其他内容之上 */
+    }
+    .action-buttons {
+      text-align: center; /* Center the buttons */
+      padding-top: 20px; /* Add some space from the content above */
+    }
+
+    .action-buttons button {
+      padding: 10px 20px;
+      margin: 0 10px; /* Space between buttons */
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      color: #ffffff;
+      background-color: #424242; /* Match the background */
+      cursor: pointer;
+      outline: none; /* Remove outline for aesthetics */
+    }
+
+    .action-buttons button:hover {
+      background-color: #616161; /* Slightly lighter on hover */
+    }
+    .setting-option h3 {
+      color: #FFFFFF;
+      margin-bottom: 10px;
+      text-align: left; /* 标题靠左对齐 */
+    }
+
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px; /* 设置选项之间的间距 */
+    }
+
+
+    .option {
+      background-color: #424242;
+      color: #fff;
+      margin: 5px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* 平滑背景色过渡 */
+    }
+
+
+
+    /* 确保勾选标记也靠左对齐 */
+    .option.selected::after {
+      content: '✔';
+      position: absolute;
+      top: -5px; /* 位置微调 */
+      right: -5px; /* 位置微调 */
+      background-color: green;
+      color: white;
+      border-radius: 50%;
+      padding: 2px;
+      font-size: 12px; /* 调整勾选标记的大小 */
+      width: 16px; /* 调整勾选标记的大小 */
+      height: 16px; /* 调整勾选标记的大小 */
+      text-align: center;
+      line-height: 12px; /* 调整勾选标记的线高以居中 */
+      border: 2px solid #121212; /* 添加边框以分隔勾选标记和背景 */
+      box-sizing: content-box; /* 确保宽高不包括边框 */
     }
 
 
@@ -298,14 +421,56 @@
   <!-- 侧边栏抽屉按钮 -->
   <div id="sidebar-toggle" class="sidebar-toggle"></div>
   <!-- 侧边栏抽屉内容 -->
+  <!-- Sidebar Content -->
   <div id="sidebar" class="sidebar">
+    <h2>PCCW-数字人设置</h2>
     <div class="sidebar-content">
-      <!-- 在这里放置您的设置参数内容 -->
-      <p>这里是设置参数的地方</p>
-      <!-- 关闭按钮 -->
-      <div id="close-sidebar" class="close-sidebar">&times;</div>
+      <div class="close-btn" id="close-btn">&times;</div>
+      <!-- Video Presenter Display -->
+      <div class="video-presenter-display">
+        <img id="current-presenter" src="https://file.pccwhq.com/flame/china-avc.png" alt="https://file.pccwhq.com/flame/china-avc.png" />
+        <!-- Placeholder for the title; this can be dynamically set if needed -->
+        <div class="video-title">小美</div>
+      </div>
+
+      <!-- Presenter Selection List -->
+      <div class="presenter-selection">
+        <h3>请选择一个数字人</h3>
+        <div class="presenter-list" id="presenter-list">
+          <!-- Presenters will be loaded here from image.json -->
+        </div>
+      </div>
+      <!-- Emotion Setting -->
+      <div class="setting-option">
+        <h3>情绪设置</h3>
+        <div class="options" id="emotion-options">
+          <!-- The options will be dynamically generated -->
+        </div>
+      </div>
+
+      <!-- Voice Setting -->
+      <div class="setting-option">
+        <h3>声音设置</h3>
+        <div class="options" id="voice-options">
+          <!-- The options will be dynamically generated -->
+        </div>
+      </div>
+      <!-- 会话管理 -->
+      <div class="setting-option">
+        <h3>会话管理</h3>
+        <div class="options" id="session-options">
+          <!-- The options will be dynamically generated -->
+        </div>
+      </div>
+
+    </div>
+    <!-- Action buttons -->
+    <div class="action-buttons">
+      <button id="confirm-button" type="button">确认</button>
+      <button id="cancel-button" type="button">取消</button>
     </div>
   </div>
+
 
   <script type="module" src="./index.js"></script>
 </body>

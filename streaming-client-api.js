@@ -1,17 +1,20 @@
 //Edit by Fang Wang on Oct 17 2023
 'use strict';
 
+// 导入API配置，这应该包含API的URL和Key。
 import DID_API from './api.json' assert { type: 'json' };
 if (DID_API.key == '🤫') alert('Please put your api key inside ./api.json and restart..')
 
+// 兼容不同浏览器的RTCPeerConnection构造函数。
 const RTCPeerConnection = (window.RTCPeerConnection || window.webkitRTCPeerConnection || window.mozRTCPeerConnection).bind(window);
 
+// 定义全局变量
 let peerConnection;
 let streamId;
 let sessionId;
 let sessionClientAnswer;
 
-
+// 获取DOM元素
 const talkVideo = document.getElementById('talk-video');
 talkVideo.setAttribute('playsinline', '');
 const peerStatusLabel = document.getElementById('peer-status-label');
@@ -19,15 +22,18 @@ const iceStatusLabel = document.getElementById('ice-status-label');
 const iceGatheringStatusLabel = document.getElementById('ice-gathering-status-label');
 const signalingStatusLabel = document.getElementById('signaling-status-label');
 
+// 连接按钮点击事件处理函数
 const connectButton = document.getElementById('connect-button');
 connectButton.onclick = async () => {
+  // 如果已经连接，则不执行任何操作。
   if (peerConnection && peerConnection.connectionState === 'connected') {
     return;
   }
-
+  // 停止所有流并关闭现有的peer连接。
   stopAllStreams();
   closePC();
 
+  // 创建新的会话并获取流ID、offer、ICE服务器和会话ID。
   const sessionResponse = await fetch(`${DID_API.url}/talks/streams`, {
     method: 'POST',
     headers: {'Authorization': `Basic ${DID_API.key}`, 'Content-Type': 'application/json'},
@@ -58,15 +64,23 @@ connectButton.onclick = async () => {
     });
 };
 
-document.getElementById("triangle-button").addEventListener("click", function() {
-  var drawer = document.getElementById("drawer");
-  if (drawer.style.right === "-250px") {
-    drawer.style.right = "0";
-  } else {
-    drawer.style.right = "-250px";
-  }
+// 侧边栏开关事件监听
+document.getElementById("sidebar-toggle").addEventListener("click", function() {
+  document.getElementById("sidebar").style.right = "0";
+  document.getElementById("main-content").classList.add("reduce");
 });
+
+// 关闭侧边栏事件监听
+document.getElementById("close-sidebar").addEventListener("click", function() {
+  document.getElementById("sidebar").style.right = "-30vw";
+  document.getElementById("main-content").classList.remove("reduce");
+});
+
+
+
+// 用户输入处理，监听回车键
 document.getElementById('user-input-field').addEventListener('keypress', async function (e) {
+  // 如果按下回车键，则发送消息并请求GPT-3生成回应
   if (e.key === 'Enter') {
     var input = this.value;
     if (input.trim() !== '') {
@@ -85,11 +99,10 @@ document.getElementById('user-input-field').addEventListener('keypress', async f
 });
 
 
-// const talkButton = document.getElementById('talk-button');
-
 // 假设有一个全局变量来保存对话历史
 let conversationHistory = '';
 
+// 生成聊天回应的函数
 async function generateChatResponse(userInput) {
   const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-003/completions';
   const apiKey = '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'; // 请确保使用自己的 API 密钥，并且不要公开暴露
@@ -141,56 +154,11 @@ async function generateChatResponse(userInput) {
 }
 
 
-talkButton.onclick = async () => {
-  if (peerConnection?.signalingState === 'stable' || peerConnection?.iceConnectionState === 'connected') {
-    // Get the user input from the text input field
-    const userInput = document.getElementById('user-input-field').value;
-
-    // Use OpenAI's GPT-3 to generate a response
-    const chatResponse = await generateChatResponse(userInput);
-
-    // const talkResponse = await fetch(`${DID_API.url}/talks/streams/${streamId}`, {
-    //   method: 'POST',
-    //   headers: { Authorization: `Basic ${DID_API.key}`, 'Content-Type': 'application/json' },
-    //   body: JSON.stringify({
-    //     script: {
-    //       type: 'text',
-    //       subtitles: 'false',
-    //       provider: { type: 'microsoft', voice_id: 'zh-cn-XiaomoNeural' },
-    //       ssml: true,
-    //       input: chatResponse, // Use the GPT-3 response as the input value
-    //     },
-    //     config: {
-    //       fluent: true,
-    //       pad_audio: 0,
-    //       driver_expressions: {
-    //         expressions: [{ expression: 'neutral', start_frame: 0, intensity: 0 }],
-    //         transition_frames: 0,
-    //       },
-    //       align_driver: true,
-    //       align_expand_factor: 0,
-    //       auto_match: true,
-    //       motion_factor: 0,
-    //       normalization_factor: 0,
-    //       sharpen: true,
-    //       stitch: true,
-    //       result_format: 'mp4',
-    //     },
-    //     'driver_url': 'bank://lively/',
-    //     'config': {
-    //       'stitch': true,
-    //     },
-    //     'session_id': sessionId,
-    //   }),
-    // });
-  }
-};
-
-
 // //################################
-
+// 销毁按钮点击事件处理函数
 const destroyButton = document.getElementById('destroy-button');
 destroyButton.onclick = async () => {
+  // 发送请求删除会话和关闭peer connection
   await fetch(`${DID_API.url}/talks/streams/${streamId}`,
     {
       method: 'DELETE',
@@ -201,6 +169,8 @@ destroyButton.onclick = async () => {
   stopAllStreams();
   closePC();
 };
+
+// 如果peer connection状态是稳定的或已连接，则使用GPT-3生成回应
 async function getMessageFromGPT(userInput) {
   if (peerConnection?.signalingState === 'stable' || peerConnection?.iceConnectionState === 'connected') {
     // Get the user input from the text input field
@@ -267,19 +237,22 @@ async function getMessageFromGPT(userInput) {
         // bank://subtle	细微的动作|工作最多的面孔，彼此靠近在一个单一的图像
         // bank://stitch	最好的作品时 "stitch": true
         'driver_url': 'bank://lively/',
-        'config': {
-          'stitch': true,
-        },
         'session_id': sessionId,
       }),
     });
   }
 }
+
+// ICE收集状态变化的回调函数
 function onIceGatheringStateChange() {
+  // 更新状态显示
   iceGatheringStatusLabel.innerText = peerConnection.iceGatheringState;
   iceGatheringStatusLabel.className = 'iceGatheringState-' + peerConnection.iceGatheringState;
 }
+
+// ICE候选处理的回调函数
 function onIceCandidate(event) {
+  // 将ICE候选发送到服务器
   console.log('onIceCandidate', event);
   if (event.candidate) {
     const { candidate, sdpMid, sdpMLineIndex } = event.candidate;
@@ -292,7 +265,10 @@ function onIceCandidate(event) {
       });
   }
 }
+
+// ICE连接状态变化的回调函数
 function onIceConnectionStateChange() {
+  // 更新状态显示并处理失败或关闭的状态
   iceStatusLabel.innerText = peerConnection.iceConnectionState;
   iceStatusLabel.className = 'iceConnectionState-' + peerConnection.iceConnectionState;
   if (peerConnection.iceConnectionState === 'failed' || peerConnection.iceConnectionState === 'closed') {
@@ -300,21 +276,32 @@ function onIceConnectionStateChange() {
     closePC();
   }
 }
+
+// 连接状态变化的回调函数
 function onConnectionStateChange() {
+  // 更新状态显示
   // not supported in firefox
   peerStatusLabel.innerText = peerConnection.connectionState;
   peerStatusLabel.className = 'peerConnectionState-' + peerConnection.connectionState;
 }
+
+// 信号状态变化的回调函数
 function onSignalingStateChange() {
+  // 更新状态显示
   signalingStatusLabel.innerText = peerConnection.signalingState;
   signalingStatusLabel.className = 'signalingState-' + peerConnection.signalingState;
 }
+
+// Track事件的回调函数
 function onTrack(event) {
+  // 将接收到的流设置到video元素上
   const remoteStream = event.streams[0];
   setVideoElement(remoteStream);
 }
 
+// 创建peer connection并设置远程和本地描述
 async function createPeerConnection(offer, iceServers) {
+  // 创建peer connection，监听各种状态变化事件
   if (!peerConnection) {
     peerConnection = new RTCPeerConnection({iceServers});
     peerConnection.addEventListener('icegatheringstatechange', onIceGatheringStateChange, true);
@@ -337,7 +324,9 @@ async function createPeerConnection(offer, iceServers) {
   return sessionClientAnswer;
 }
 
+// 将流设置到video元素的函数
 function setVideoElement(stream) {
+  // 如果流存在，则设置到video元素上
   if (!stream) return;
   talkVideo.srcObject = stream;
 
@@ -347,7 +336,9 @@ function setVideoElement(stream) {
   }
 }
 
+// 停止所有流的函数
 function stopAllStreams() {
+  // 停止video元素的所有流
   if (talkVideo.srcObject) {
     console.log('stopping video streams');
     talkVideo.srcObject.getTracks().forEach(track => track.stop());
@@ -355,7 +346,10 @@ function stopAllStreams() {
   }
 }
 
+// 关闭peer connection的函数
+
 function closePC(pc = peerConnection) {
+  // 关闭peer connection并移除所有事件监听器
   if (!pc) return;
   console.log('stopping peer connection');
   pc.close();

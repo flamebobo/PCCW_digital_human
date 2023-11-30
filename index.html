@@ -75,10 +75,17 @@
       height: 100%;
     }
 
-    #content {
+    .main-content {
+      transition: margin-right 0.3s;
+      width: 100%;
       min-height: 100%;
       display: flex;
       flex-direction: column;
+    }
+
+    /* 打开抽屉时主内容区域样式 */
+    .main-content.reduce {
+      margin-right: 30vw; /* 抽屉打开时减少的宽度 */
     }
 
     /*#buttons {*/
@@ -201,41 +208,51 @@
       margin-bottom: 10px;
       clear: both;
     }
-    /* 三角形按钮样式 */
-    #triangle-button {
-      width: 0;
-      height: 0;
-      border-left: 30px solid transparent;
-      border-right: 30px solid transparent;
-      border-bottom: 60px solid cornflowerblue;
+
+    /* 抽屉按钮样式 */
+    .sidebar-toggle {
+      width: 30px;
+      height: 30px;
+      background-color: #333;
       position: fixed;
       right: 0;
       top: 50%;
       cursor: pointer;
+      /* 使用伪元素创建三角形箭头 */
+      clip-path: polygon(100% 50%, 0 0, 0 100%);
     }
 
-    /* 抽屉页面样式 */
-    #drawer {
-      width: 250px;
+    /* 侧边栏抽屉样式 */
+    .sidebar {
+      width: 30vw; /* 抽屉宽度为30%的视口宽度 */
       height: 100%;
       background-color: #333;
       position: fixed;
       top: 0;
-      right: -250px; /* 初始时隐藏 */
+      right: -30vw; /* 开始时隐藏在视图外 */
       transition: right 0.3s;
+      z-index: 1000;
     }
 
-    /* 抽屉内容样式 */
-    #drawer-content {
+    .sidebar-content {
       padding: 20px;
       color: white;
     }
+
+    .close-sidebar {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 30px;
+    }
+
 
   </style>
 </head>
 
 <body>
-  <div id="content">
+  <div id="main-content" class="main-content">
     <div id="video-wrapper">
       <div>
         <video id="talk-video" width=400 height=400 autoplay></video>
@@ -276,16 +293,20 @@
         </tr>
       </table>
     </div>
-    <!-- 三角形按钮 -->
-    <div id="triangle-button"></div>
-    <!-- 抽屉页面 -->
-    <div id="drawer">
-      <!-- 抽屉内容 -->
-      <div id="drawer-content">
-        <!-- 在这里添加设置参数的表单或其他元素 -->
-        <p>这里是设置参数的地方</p>
-      </div>
-  </div>  
+  </div>
+
+  <!-- 侧边栏抽屉按钮 -->
+  <div id="sidebar-toggle" class="sidebar-toggle"></div>
+  <!-- 侧边栏抽屉内容 -->
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-content">
+      <!-- 在这里放置您的设置参数内容 -->
+      <p>这里是设置参数的地方</p>
+      <!-- 关闭按钮 -->
+      <div id="close-sidebar" class="close-sidebar">&times;</div>
+    </div>
+  </div>
+
   <script type="module" src="./index.js"></script>
 </body>
 </html>

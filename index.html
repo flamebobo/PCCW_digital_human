@@ -234,6 +234,7 @@
       right: -30vw; /* 开始时隐藏在视图外 */
       transition: right 0.3s;
       z-index: 1000;
+      overflow-y: auto; /* 如果代码很长，允许竖向滚动 */
     }
 
     .sidebar-content {
@@ -251,7 +252,7 @@
 
     /* Additional styles for new elements */
     .video-presenter-display img {
-      width: 100%; /* Adjust as needed */
+      width: 70%; /* Adjust as needed */
       margin-bottom: 20px; /* Spacing between the image and the title */
     }
 

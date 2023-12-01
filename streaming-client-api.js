@@ -15,7 +15,32 @@ let sessionId;
 let sessionClientAnswer;
 
 // 参数设置：
-let selectedPresenterPosterUrl = '';
+let selectedPresenterPosterUrl = '';  // 数字人头像
+let selectedEmotion = 'neutral'; // 情绪默认值
+let selectedIntensity = 0.5;
+let selectedVoiceId = 'zh-cn-XiaomoNeural'; // 声音默认值
+
+// 情绪和强度的映射
+const emotionsWithIntensity = {
+  'neutral': { label: '中性', intensity: 0.5 },
+  'happy': { label: '开心', intensity: 1.0 },
+  'surprise': { label: '惊喜', intensity: 1.0 },
+  'serious': { label: '严肃', intensity: 0.5 }
+};
+
+// OpenAI API 配置
+const openAIConfig = {
+  apiKey: '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',
+  models: {
+    turbo: 'gpt-3.5-turbo',
+    davinci: 'text-davinci-003'
+  },
+  getChatEndpoint: function(model) {
+    return model === this.models.turbo ?
+        'https://api.openai.com/v1/chat/completions' :
+        `https://api.openai.com/v1/engines/${model}/completions`;
+  }
+};
 
 // 获取DOM元素
 const talkVideo = document.getElementById('talk-video');
@@ -120,8 +145,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const connectButton = document.getElementById('connect-button');
     connectButton.setAttribute('data-source-url', selectedPresenterPosterUrl);
     // You might also want to trigger the connectButton's click event
-    // connectButton.click();
+    connectButton.click();
+
     closeSidebar(); // Close the sidebar upon confirmation
+
+    console.log("selectedPresenterPosterUrl:",selectedPresenterPosterUrl);
+    console.log("selectedEmotion:",selectedEmotion);
+    console.log("selectedVoiceId:",selectedVoiceId);
+  });
+
+  // 绑定演示者选项的点击事件，更新选中的演示者的poster URL
+  document.querySelectorAll('.presenter').forEach(presenter => {
+    presenter.addEventListener('click', function() {
+      selectedPresenterPosterUrl = this.dataset.poster;
+      // 可以在这里直接更新当前演示者的显示
+      document.getElementById('current-presenter').src = selectedPresenterPosterUrl;
+      // 更新视频标题
+      document.querySelector('.video-title').textContent = this.dataset.name;
+    });
   });
 
   document.getElementById('cancel-button').addEventListener('click', () => {
@@ -131,12 +172,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // Emotion options['neutral', 'happy', 'surprise', 'serious'];
   const emotions = {'neutral': '中性', 'happy':'开心', 'surprise': '惊喜', 'serious':'严肃'};
   const emotionOptionsContainer = document.getElementById('emotion-options');
-  Object.keys(emotions).forEach(emotionKey => createOption(emotionOptionsContainer, emotions[emotionKey], emotionKey));
+  Object.keys(emotionsWithIntensity).forEach(emotionKey => {
+    createOption(emotionOptionsContainer, emotionsWithIntensity[emotionKey].label, emotionKey, 'emotion');
+  });
 
   // Voice options
   const voices = {'zh-HK-HiuMaanNeural': '粤语小曼', 'zh-cn-XiaomoNeural': '中文小沫'};
   const voiceOptionsContainer = document.getElementById('voice-options');
-  Object.keys(voices).forEach(voiceKey => createOption(voiceOptionsContainer, voices[voiceKey], voiceKey));
+  Object.keys(voices).forEach(voiceKey => {
+    createOption(voiceOptionsContainer, voices[voiceKey], voiceKey, 'voice');
+  });
 
   const sessions = {'savaSession': '保存会话', 'instantSession': '瞬时会话'};
   const sessionOptionsContainer = document.getElementById('session-options');
@@ -144,18 +189,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-function createOption(container, label, value = label) {
+function createOption(container, label, value, type) {
   const optionDiv = document.createElement('div');
   optionDiv.classList.add('option');
   optionDiv.textContent = label;
   optionDiv.setAttribute('data-value', value);
 
-  // Event listener for option selection
+  // 选择情绪时更新强度
   optionDiv.addEventListener('click', function() {
-    // Deselect all options
     container.querySelectorAll('.option').forEach(opt => opt.classList.remove('selected'));
-    // Select the clicked one
     this.classList.add('selected');
+
+    if (type === 'emotion') {
+      selectedEmotion = value;
+      selectedIntensity = emotionsWithIntensity[value].intensity;
+    }
   });
 
   container.appendChild(optionDiv);
@@ -201,35 +249,14 @@ document.getElementById('user-input-field').addEventListener('keypress', async f
 // 假设有一个全局变量来保存对话历史
 let conversationHistory = [];
 
-// 生成聊天回应的函数
-async function generateChatResponse(userInput) {
-  // 显示加载指示器
+// 使用API调用OpenAI的函数
+async function callOpenAI(apiUrl, data) {
   showLoader();
-
-  const apiUrl = 'https://api.openai.com/v1/chat/completions'; // 使用聊天模型的正确端点
-  const apiKey = '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'; // 请使用您自己的API密钥，并确保不要公开暴露
-
-  // 将用户的输入添加到对话历史
-  conversationHistory.push({ role: "user", content: userInput });
-
-  const settings = {
-    max_tokens: 150,
-    temperature: 0.5,
-    top_p: 1,
-    frequency_penalty: 0,
-    presence_penalty: 0,
-  };
-
-  const data = {
-    model: "gpt-3.5-turbo",
-    messages: conversationHistory // 聊天模型期望的消息格式
-  };
-
   try {
     const response = await fetch(apiUrl, {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${apiKey}`,
+        'Authorization': `Bearer ${openAIConfig.apiKey}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(data),
@@ -240,21 +267,57 @@ async function generateChatResponse(userInput) {
     }
 
     const responseData = await response.json();
-
-    // 获取AI的响应文本
-    const aiText = responseData.choices[0].message.content; // 聊天模型的响应在message.content字段内
-
-    hideLoader(); // 隐藏加载指示器
-
-    return aiText;
+    hideLoader();
+    return responseData;
   } catch (error) {
+    hideLoader();
     console.error('Error calling OpenAI API:', error);
-    return `I'm sorry, I wasn't able to process that.`;
+    return null;
   }
 }
 
+// 生成聊天回应的函数 - GPT-3.5-turbo
+async function generateChatResponseTurbo(userInput) {
+  const apiUrl = openAIConfig.getChatEndpoint(openAIConfig.models.turbo);
+  conversationHistory.push({ role: "user", content: userInput });
 
+  const data = {
+    model: openAIConfig.models.turbo,
+    messages: conversationHistory
+  };
 
+  const responseData = await callOpenAI(apiUrl, data);
+  return responseData ? responseData.choices[0].message.content : `I'm sorry, I wasn't able to process that.`;
+}
+
+// 生成聊天回应的函数 - text-davinci-003（支持上下文）
+async function generateChatResponseDavinci(userInput) {
+  const apiUrl = openAIConfig.getChatEndpoint(openAIConfig.models.davinci);
+
+  // 将之前的对话历史转换成一个连续的对话字符串
+  let conversation = conversationHistory.map(entry => `${entry.role}: ${entry.content}`).join('\n');
+  conversation += `\nUser: ${userInput}\nAI:`; // 添加最新的用户输入
+
+  const data = {
+    prompt: conversation,
+    max_tokens: 2000,
+    stop: ["\n", "User:", "AI:"], // 可以指定停止标记，以防止模型生成过多的内容
+    temperature: 0.5,
+    top_p: 1,
+    frequency_penalty: 0,
+    presence_penalty: 0,
+  };
+
+  const responseData = await callOpenAI(apiUrl, data);
+  // 如果我们成功地从API获取了响应，那么我们就添加AI的最新回复到对话历史中
+  if (responseData) {
+    const aiText = responseData.choices[0].text.trim();
+    conversationHistory.push({ role: "ai", content: aiText });
+    return aiText;
+  } else {
+    return `I'm sorry, I wasn't able to process that.`;
+  }
+}
 
 // //################################
 // 销毁按钮点击事件处理函数
@@ -277,7 +340,7 @@ async function getMessageFromGPT(userInput) {
   const chatBox = document.getElementById('chat-box');
 
   // 异步获取 GPT-3 的响应
-  const chatResponse = await generateChatResponse(userInput);
+  const chatResponse = await generateChatResponseDavinci(userInput);
 
   // 逐字显示消息
   // 当从GPT获取到响应后
@@ -285,6 +348,9 @@ async function getMessageFromGPT(userInput) {
   receivedMessageElement.className = 'message-received clearfix';
   chatBox.appendChild(receivedMessageElement);
   typeMessage(chatResponse, receivedMessageElement); // 使用逐字打印方法
+
+  // 调用DID
+  getMessageFromDID(chatResponse);
 }
 // 逐字显示消息的函数
 function typeMessage(message, element) {
@@ -362,7 +428,7 @@ async function getMessageFromDID(chatResponse){
          * 中文：zh-cn-XiaomoNeural
          * 粤语：zh-HK-HiuMaanNeural
          */
-        provider: { type: 'microsoft', voice_id: 'zh-cn-XiaomoNeural' },
+        provider: { type: 'microsoft', voice_id: selectedVoiceId },
         ssml: true,
         input: chatResponse, // Use the GPT-3 response as the input value
       },
@@ -370,7 +436,7 @@ async function getMessageFromDID(chatResponse){
         fluent: true,
         pad_audio: 0,
         driver_expressions: {
-          expressions: [{ expression: 'neutral', start_frame: 0, intensity: 0 }],
+          expressions: [{ expression: selectedEmotion, start_frame: 0, intensity: selectedIntensity }],
           transition_frames: 0
         },
         align_driver: true,

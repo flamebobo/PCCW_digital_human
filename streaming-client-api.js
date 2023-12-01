@@ -203,6 +203,9 @@ let conversationHistory = [];
 
 // 生成聊天回应的函数
 async function generateChatResponse(userInput) {
+  // 显示加载指示器
+  showLoader();
+
   const apiUrl = 'https://api.openai.com/v1/chat/completions'; // 使用聊天模型的正确端点
   const apiKey = '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'; // 请使用您自己的API密钥，并确保不要公开暴露
 
@@ -241,6 +244,8 @@ async function generateChatResponse(userInput) {
     // 获取AI的响应文本
     const aiText = responseData.choices[0].message.content; // 聊天模型的响应在message.content字段内
 
+    hideLoader(); // 隐藏加载指示器
+
     return aiText;
   } catch (error) {
     console.error('Error calling OpenAI API:', error);
@@ -269,23 +274,80 @@ destroyButton.onclick = async () => {
 
 // 如果peer connection状态是稳定的或已连接，则使用GPT-3生成回应
 async function getMessageFromGPT(userInput) {
-  if (peerConnection?.signalingState === 'stable' || peerConnection?.iceConnectionState === 'connected') {
-    // 假设 generateChatResponse 是一个函数，能够异步地从 GPT-3 获取响应
-    const chatResponse = await generateChatResponse(userInput);
-    var chatBox = document.getElementById('chat-box');
+  const chatBox = document.getElementById('chat-box');
 
-    // 创建新的消息元素
-    var receivedMessageElement = document.createElement('div');
-    receivedMessageElement.className = 'message-received clearfix';
-    receivedMessageElement.textContent = chatResponse; // 安全地设置文本内容
-    // 将换行符 \n 替换为 HTML 的 <br> 标签
-    receivedMessageElement.innerHTML = chatResponse.replace(/\n/g, '<br>');
-    // 将新的消息元素添加到聊天框中
-    chatBox.appendChild(receivedMessageElement);
-    chatBox.scrollTop = chatBox.scrollHeight;
+  // 异步获取 GPT-3 的响应
+  const chatResponse = await generateChatResponse(userInput);
 
-    // 调用did
-    // getMessageFromDID(chatResponse);
+  // 逐字显示消息
+  // 当从GPT获取到响应后
+  const receivedMessageElement = document.createElement('div');
+  receivedMessageElement.className = 'message-received clearfix';
+  chatBox.appendChild(receivedMessageElement);
+  typeMessage(chatResponse, receivedMessageElement); // 使用逐字打印方法
+}
+// 逐字显示消息的函数
+function typeMessage(message, element) {
+  let i = 0;
+  const typingSpeed = 50; // 打字速度，单位为毫秒
+  element.textContent = ''; // 清空元素的当前内容
+  element.style.display = 'block'; // 显示元素
+
+  function typing() {
+    if (i < message.length) {
+      // 如果遇到代码块标记，就一次性打印整个代码块
+      if (message.slice(i).startsWith('```')) {
+        let codeBlockEnd = message.indexOf('```', i + 3);
+        if (codeBlockEnd === -1) {
+          codeBlockEnd = message.length;
+        }
+        // 包括结束的反引号在内一次性打印
+        element.textContent += message.slice(i, codeBlockEnd + 3);
+        i = codeBlockEnd + 3;
+      } else {
+        element.textContent += message.charAt(i);
+        i++;
+      }
+      setTimeout(typing, typingSpeed);
+    } else {
+      // 打字结束后，如果有代码块，将其格式化
+      formatCodeBlocks(element);
+      element.style.display = ''; // 隐藏正在输入的提示
+    }
+  }
+  typing();
+}
+
+// 格式化代码块的函数
+function formatCodeBlocks(element) {
+  const text = element.textContent;
+  if (text.includes('```')) {
+    const formattedHtml = text.replace(/```(.*?)```/gs, '<pre class="code-block">$1</pre>');
+    element.innerHTML = formattedHtml;
+  }
+}
+
+// 显示加载指示器的函数
+function showLoader() {
+  const chatBox = document.getElementById('chat-box');
+  const loader = document.createElement('div');
+  loader.className = 'loader';
+
+  // 如果已经有一个加载指示器，则不再添加
+  if (!chatBox.querySelector('.loader')) {
+    chatBox.appendChild(loader);
+  }
+
+  // 将加载指示器放置在消息输入框的上方
+  loader.style.bottom = (chatBox.offsetHeight + 15) + 'px';
+}
+
+
+// 接收到响应后移除加载指示器的函数
+function hideLoader() {
+  const loader = document.querySelector('.loader');
+  if (loader) {
+    loader.remove(); // 如果加载指示器存在，则移除
   }
 }
 async function getMessageFromDID(chatResponse){

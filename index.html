@@ -269,9 +269,16 @@
     }
 
     .presenter-list {
-      white-space: nowrap;
-      overflow-x: auto;
-      margin-bottom: 20px;
+      display: flex;            /* 开启flex布局 */
+      flex-wrap: wrap;          /* 允许内容换行 */
+      overflow-x: auto;         /* 水平滚动条 */
+      align-items: flex-start;  /* 子项从容器的起始位置对齐 */
+      height: 100%;             /* 设置高度为容器的100%，确保是三行 */
+      max-height: 600px;        /* 限制最大高度，这个高度可以根据您的子项高度调整 */
+    }
+    .presenter {
+      margin: 5px;               /* 添加边距来区分项目 */
+      flex: 0 0 calc(33.333% - 10px); /* 设置基础大小为容器宽度的1/3减去边距 */
     }
 
     .presenter-list .presenter {
@@ -404,6 +411,58 @@
       word-wrap: break-word;
     }
 
+    #voice-options {
+      display: flex; /* 使用flex布局 */
+      flex-wrap: wrap; /* 防止内容换行 */
+      overflow-y: auto; /* 允许水平滚动 */
+      align-items: center; /* 项目垂直居中 */
+      gap: 10px; /* 项目之间的间距 */
+      padding: 10px 0; /* 上下的内间距 */
+      height: 250px; /* 设置最大高度 */
+      /*overflow-y: auto; !* 允许水平滚动 *!*/
+    }
+
+    .option {
+      /*flex: 0 0 calc(33.333% - 10px); !* 设置每个选项的基础宽度 *!*/
+      height: auto; /* 高度自适应内容 */
+      display: flex; /* 使用flex布局 */
+      align-items: center; /* 内容垂直居中 */
+      justify-content: center; /* 内容水平居中 */
+      white-space: nowrap; /* 确保文本不换行 */
+      /*overflow: hidden;    !* 隐藏超出部分的文本 *!*/
+      /*text-overflow: ellipsis; !* 超出部分文本用省略号表示 *!*/
+    }
+
+    .presenter-list, .voice-options {
+      display: flex; /* 使用flex布局 */
+      flex-wrap: wrap; /* 防止内容换行 */
+      /*overflow-x: auto; !* 允许水平滚动 *!*/
+      /*overflow-y: hidden; !* 隐藏垂直滚动条 *!*/
+      white-space: nowrap; /* 防止文字换行 */
+      gap: 10px; /* 选项之间的间隔 */
+      padding: 10px 0; /* 上下的内边距 */
+      height: 300px;
+    }
+
+    .presenter-list .presenter, .voice-options .option {
+      flex: 0 0 auto; /* 项目不伸缩，自动根据内容设置宽度 */
+      display: inline-block; /* 使项目内联显示 */
+      margin-right: 10px; /* 项目之间的右边距 */
+    }
+
+    /* 自定义滚动条样式 */
+    ::-webkit-scrollbar {
+      height: 8px; /* 滚动条的高度 */
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #888; /* 滚动条滑块的背景色 */
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555; /* 滚动条滑块的背景色（鼠标悬停时） */
+    }
+
 
 
   </style>
@@ -488,10 +547,17 @@
         <div class="options" id="voice-options">
         </div>
       </div>
-      <!-- 会话管理 -->
+
+      <!-- Voice Setting -->
       <div class="setting-option">
-        <h3>会话管理</h3>
-        <div class="options" id="session-options">
+        <h3>说话风格设置</h3>
+        <div class="options" id="speaking-options">
+        </div>
+      </div>
+      <!-- 模型选择 -->
+      <div class="setting-option">
+        <h3>模型选择</h3>
+        <div class="options" id="model-options">
 
         </div>
       </div>

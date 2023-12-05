@@ -1,0 +1,5105 @@
+[
+  {
+    "id": "af-ZA-AdriNeural",
+    "name": "Adri",
+    "gender": "female",
+    "locale": "af-ZA",
+    "language": "Afrikaans (South Africa)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "af-ZA-WillemNeural",
+    "name": "Willem",
+    "gender": "male",
+    "locale": "af-ZA",
+    "language": "Afrikaans (South Africa)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "am-ET-MekdesNeural",
+    "name": "Mekdes",
+    "gender": "female",
+    "locale": "am-ET",
+    "language": "Amharic (Ethiopia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "am-ET-AmehaNeural",
+    "name": "Ameha",
+    "gender": "male",
+    "locale": "am-ET",
+    "language": "Amharic (Ethiopia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-AE-FatimaNeural",
+    "name": "Fatima",
+    "gender": "female",
+    "locale": "ar-AE",
+    "language": "Arabic (United Arab Emirates)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-AE-HamdanNeural",
+    "name": "Hamdan",
+    "gender": "male",
+    "locale": "ar-AE",
+    "language": "Arabic (United Arab Emirates)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-BH-LailaNeural",
+    "name": "Laila",
+    "gender": "female",
+    "locale": "ar-BH",
+    "language": "Arabic (Bahrain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-BH-AliNeural",
+    "name": "Ali",
+    "gender": "male",
+    "locale": "ar-BH",
+    "language": "Arabic (Bahrain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-DZ-AminaNeural",
+    "name": "Amina",
+    "gender": "female",
+    "locale": "ar-DZ",
+    "language": "Arabic (Algeria)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-DZ-IsmaelNeural",
+    "name": "Ismael",
+    "gender": "male",
+    "locale": "ar-DZ",
+    "language": "Arabic (Algeria)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-EG-SalmaNeural",
+    "name": "Salma",
+    "gender": "female",
+    "locale": "ar-EG",
+    "language": "Arabic (Egypt)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-EG-ShakirNeural",
+    "name": "Shakir",
+    "gender": "male",
+    "locale": "ar-EG",
+    "language": "Arabic (Egypt)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-EG-Hoda",
+    "name": "Hoda",
+    "gender": "female",
+    "locale": "ar-EG",
+    "language": "Arabic (Egypt)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-IQ-RanaNeural",
+    "name": "Rana",
+    "gender": "female",
+    "locale": "ar-IQ",
+    "language": "Arabic (Iraq)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-IQ-BasselNeural",
+    "name": "Bassel",
+    "gender": "male",
+    "locale": "ar-IQ",
+    "language": "Arabic (Iraq)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-JO-SanaNeural",
+    "name": "Sana",
+    "gender": "female",
+    "locale": "ar-JO",
+    "language": "Arabic (Jordan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-JO-TaimNeural",
+    "name": "Taim",
+    "gender": "male",
+    "locale": "ar-JO",
+    "language": "Arabic (Jordan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-KW-NouraNeural",
+    "name": "Noura",
+    "gender": "female",
+    "locale": "ar-KW",
+    "language": "Arabic (Kuwait)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-KW-FahedNeural",
+    "name": "Fahed",
+    "gender": "male",
+    "locale": "ar-KW",
+    "language": "Arabic (Kuwait)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-LB-LaylaNeural",
+    "name": "Layla",
+    "gender": "female",
+    "locale": "ar-LB",
+    "language": "Arabic (Lebanon)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-LB-RamiNeural",
+    "name": "Rami",
+    "gender": "male",
+    "locale": "ar-LB",
+    "language": "Arabic (Lebanon)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-LY-ImanNeural",
+    "name": "Iman",
+    "gender": "female",
+    "locale": "ar-LY",
+    "language": "Arabic (Libya)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-LY-OmarNeural",
+    "name": "Omar",
+    "gender": "male",
+    "locale": "ar-LY",
+    "language": "Arabic (Libya)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-MA-MounaNeural",
+    "name": "Mouna",
+    "gender": "female",
+    "locale": "ar-MA",
+    "language": "Arabic (Morocco)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-MA-JamalNeural",
+    "name": "Jamal",
+    "gender": "male",
+    "locale": "ar-MA",
+    "language": "Arabic (Morocco)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-OM-AyshaNeural",
+    "name": "Aysha",
+    "gender": "female",
+    "locale": "ar-OM",
+    "language": "Arabic (Oman)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-OM-AbdullahNeural",
+    "name": "Abdullah",
+    "gender": "male",
+    "locale": "ar-OM",
+    "language": "Arabic (Oman)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-QA-AmalNeural",
+    "name": "Amal",
+    "gender": "female",
+    "locale": "ar-QA",
+    "language": "Arabic (Qatar)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-QA-MoazNeural",
+    "name": "Moaz",
+    "gender": "male",
+    "locale": "ar-QA",
+    "language": "Arabic (Qatar)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-SA-ZariyahNeural",
+    "name": "Zariyah",
+    "gender": "female",
+    "locale": "ar-SA",
+    "language": "Arabic (Saudi Arabia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-SA-HamedNeural",
+    "name": "Hamed",
+    "gender": "male",
+    "locale": "ar-SA",
+    "language": "Arabic (Saudi Arabia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-SA-Naayf",
+    "name": "Naayf",
+    "gender": "male",
+    "locale": "ar-SA",
+    "language": "Arabic (Saudi Arabia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-SY-AmanyNeural",
+    "name": "Amany",
+    "gender": "female",
+    "locale": "ar-SY",
+    "language": "Arabic (Syria)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-SY-LaithNeural",
+    "name": "Laith",
+    "gender": "male",
+    "locale": "ar-SY",
+    "language": "Arabic (Syria)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-TN-ReemNeural",
+    "name": "Reem",
+    "gender": "female",
+    "locale": "ar-TN",
+    "language": "Arabic (Tunisia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-TN-HediNeural",
+    "name": "Hedi",
+    "gender": "male",
+    "locale": "ar-TN",
+    "language": "Arabic (Tunisia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-YE-MaryamNeural",
+    "name": "Maryam",
+    "gender": "female",
+    "locale": "ar-YE",
+    "language": "Arabic (Yemen)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ar-YE-SalehNeural",
+    "name": "Saleh",
+    "gender": "male",
+    "locale": "ar-YE",
+    "language": "Arabic (Yemen)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "az-AZ-BanuNeural",
+    "name": "Banu",
+    "gender": "female",
+    "locale": "az-AZ",
+    "language": "Azerbaijani (Latin, Azerbaijan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "az-AZ-BabekNeural",
+    "name": "Babek",
+    "gender": "male",
+    "locale": "az-AZ",
+    "language": "Azerbaijani (Latin, Azerbaijan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "bg-BG-KalinaNeural",
+    "name": "Kalina",
+    "gender": "female",
+    "locale": "bg-BG",
+    "language": "Bulgarian (Bulgaria)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "bg-BG-BorislavNeural",
+    "name": "Borislav",
+    "gender": "male",
+    "locale": "bg-BG",
+    "language": "Bulgarian (Bulgaria)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "bg-BG-Ivan",
+    "name": "Ivan",
+    "gender": "male",
+    "locale": "bg-BG",
+    "language": "Bulgarian (Bulgaria)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "bn-BD-NabanitaNeural",
+    "name": "Nabanita",
+    "gender": "female",
+    "locale": "bn-BD",
+    "language": "Bangla (Bangladesh)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "bn-BD-PradeepNeural",
+    "name": "Pradeep",
+    "gender": "male",
+    "locale": "bn-BD",
+    "language": "Bangla (Bangladesh)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "bn-IN-TanishaaNeural",
+    "name": "Tanishaa",
+    "gender": "female",
+    "locale": "bn-IN",
+    "language": "Bengali (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "bn-IN-BashkarNeural",
+    "name": "Bashkar",
+    "gender": "male",
+    "locale": "bn-IN",
+    "language": "Bengali (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "bs-BA-VesnaNeural",
+    "name": "Vesna",
+    "gender": "female",
+    "locale": "bs-BA",
+    "language": "Bosnian (Bosnia and Herzegovina)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "bs-BA-GoranNeural",
+    "name": "Goran",
+    "gender": "male",
+    "locale": "bs-BA",
+    "language": "Bosnian (Bosnia and Herzegovina)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ca-ES-JoanaNeural",
+    "name": "Joana",
+    "gender": "female",
+    "locale": "ca-ES",
+    "language": "Catalan (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ca-ES-EnricNeural",
+    "name": "Enric",
+    "gender": "male",
+    "locale": "ca-ES",
+    "language": "Catalan (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ca-ES-AlbaNeural",
+    "name": "Alba",
+    "gender": "female",
+    "locale": "ca-ES",
+    "language": "Catalan (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ca-ES-HerenaRUS",
+    "name": "Herena",
+    "gender": "female",
+    "locale": "ca-ES",
+    "language": "Catalan (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "cs-CZ-VlastaNeural",
+    "name": "Vlasta",
+    "gender": "female",
+    "locale": "cs-CZ",
+    "language": "Czech (Czechia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "cs-CZ-AntoninNeural",
+    "name": "Antonin",
+    "gender": "male",
+    "locale": "cs-CZ",
+    "language": "Czech (Czechia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "cs-CZ-Jakub",
+    "name": "Jakub",
+    "gender": "male",
+    "locale": "cs-CZ",
+    "language": "Czech (Czechia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "cy-GB-NiaNeural",
+    "name": "Nia",
+    "gender": "female",
+    "locale": "cy-GB",
+    "language": "Welsh (United Kingdom)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "cy-GB-AledNeural",
+    "name": "Aled",
+    "gender": "male",
+    "locale": "cy-GB",
+    "language": "Welsh (United Kingdom)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "da-DK-ChristelNeural",
+    "name": "Christel",
+    "gender": "female",
+    "locale": "da-DK",
+    "language": "Danish (Denmark)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "da-DK-JeppeNeural",
+    "name": "Jeppe",
+    "gender": "male",
+    "locale": "da-DK",
+    "language": "Danish (Denmark)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "da-DK-HelleRUS",
+    "name": "Helle",
+    "gender": "female",
+    "locale": "da-DK",
+    "language": "Danish (Denmark)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-AT-IngridNeural",
+    "name": "Ingrid",
+    "gender": "female",
+    "locale": "de-AT",
+    "language": "German (Austria)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-AT-JonasNeural",
+    "name": "Jonas",
+    "gender": "male",
+    "locale": "de-AT",
+    "language": "German (Austria)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-AT-Michael",
+    "name": "Michael",
+    "gender": "male",
+    "locale": "de-AT",
+    "language": "German (Austria)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-CH-LeniNeural",
+    "name": "Leni",
+    "gender": "female",
+    "locale": "de-CH",
+    "language": "German (Switzerland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-CH-JanNeural",
+    "name": "Jan",
+    "gender": "male",
+    "locale": "de-CH",
+    "language": "German (Switzerland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-CH-Karsten",
+    "name": "Karsten",
+    "gender": "male",
+    "locale": "de-CH",
+    "language": "German (Switzerland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-DE-KatjaNeural",
+    "name": "Katja",
+    "gender": "female",
+    "locale": "de-DE",
+    "language": "German (Germany)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-DE-ConradNeural",
+    "name": "Conrad",
+    "gender": "male",
+    "locale": "de-DE",
+    "language": "German (Germany)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-DE-AmalaNeural",
+    "name": "Amala",
+    "gender": "female",
+    "locale": "de-DE",
+    "language": "German (Germany)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-DE-BerndNeural",
+    "name": "Bernd",
+    "gender": "male",
+    "locale": "de-DE",
+    "language": "German (Germany)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-DE-ChristophNeural",
+    "name": "Christoph",
+    "gender": "male",
+    "locale": "de-DE",
+    "language": "German (Germany)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-DE-ElkeNeural",
+    "name": "Elke",
+    "gender": "female",
+    "locale": "de-DE",
+    "language": "German (Germany)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-DE-GiselaNeural",
+    "name": "Gisela",
+    "gender": "female",
+    "locale": "de-DE",
+    "language": "German (Germany)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-DE-KasperNeural",
+    "name": "Kasper",
+    "gender": "male",
+    "locale": "de-DE",
+    "language": "German (Germany)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-DE-KillianNeural",
+    "name": "Killian",
+    "gender": "male",
+    "locale": "de-DE",
+    "language": "German (Germany)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-DE-KlarissaNeural",
+    "name": "Klarissa",
+    "gender": "female",
+    "locale": "de-DE",
+    "language": "German (Germany)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-DE-KlausNeural",
+    "name": "Klaus",
+    "gender": "male",
+    "locale": "de-DE",
+    "language": "German (Germany)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-DE-LouisaNeural",
+    "name": "Louisa",
+    "gender": "female",
+    "locale": "de-DE",
+    "language": "German (Germany)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-DE-MajaNeural",
+    "name": "Maja",
+    "gender": "female",
+    "locale": "de-DE",
+    "language": "German (Germany)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-DE-RalfNeural",
+    "name": "Ralf",
+    "gender": "male",
+    "locale": "de-DE",
+    "language": "German (Germany)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-DE-TanjaNeural",
+    "name": "Tanja",
+    "gender": "female",
+    "locale": "de-DE",
+    "language": "German (Germany)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-DE-HeddaRUS",
+    "name": "Hedda",
+    "gender": "female",
+    "locale": "de-DE",
+    "language": "German (Germany)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "de-DE-Stefan",
+    "name": "Stefan",
+    "gender": "male",
+    "locale": "de-DE",
+    "language": "German (Germany)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "el-GR-AthinaNeural",
+    "name": "Athina",
+    "gender": "female",
+    "locale": "el-GR",
+    "language": "Greek (Greece)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "el-GR-NestorasNeural",
+    "name": "Nestoras",
+    "gender": "male",
+    "locale": "el-GR",
+    "language": "Greek (Greece)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "el-GR-Stefanos",
+    "name": "Stefanos",
+    "gender": "male",
+    "locale": "el-GR",
+    "language": "Greek (Greece)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-AU-NatashaNeural",
+    "name": "Natasha",
+    "gender": "female",
+    "locale": "en-AU",
+    "language": "English (Australia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-AU-WilliamNeural",
+    "name": "William",
+    "gender": "male",
+    "locale": "en-AU",
+    "language": "English (Australia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-AU-AnnetteNeural",
+    "name": "Annette",
+    "gender": "female",
+    "locale": "en-AU",
+    "language": "English (Australia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-AU-CarlyNeural",
+    "name": "Carly",
+    "gender": "female",
+    "locale": "en-AU",
+    "language": "English (Australia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-AU-DarrenNeural",
+    "name": "Darren",
+    "gender": "male",
+    "locale": "en-AU",
+    "language": "English (Australia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-AU-DuncanNeural",
+    "name": "Duncan",
+    "gender": "male",
+    "locale": "en-AU",
+    "language": "English (Australia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-AU-ElsieNeural",
+    "name": "Elsie",
+    "gender": "female",
+    "locale": "en-AU",
+    "language": "English (Australia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-AU-FreyaNeural",
+    "name": "Freya",
+    "gender": "female",
+    "locale": "en-AU",
+    "language": "English (Australia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-AU-JoanneNeural",
+    "name": "Joanne",
+    "gender": "female",
+    "locale": "en-AU",
+    "language": "English (Australia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-AU-KenNeural",
+    "name": "Ken",
+    "gender": "male",
+    "locale": "en-AU",
+    "language": "English (Australia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-AU-KimNeural",
+    "name": "Kim",
+    "gender": "female",
+    "locale": "en-AU",
+    "language": "English (Australia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-AU-NeilNeural",
+    "name": "Neil",
+    "gender": "male",
+    "locale": "en-AU",
+    "language": "English (Australia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-AU-TimNeural",
+    "name": "Tim",
+    "gender": "male",
+    "locale": "en-AU",
+    "language": "English (Australia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-AU-TinaNeural",
+    "name": "Tina",
+    "gender": "female",
+    "locale": "en-AU",
+    "language": "English (Australia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-AU-Catherine",
+    "name": "Catherine",
+    "gender": "female",
+    "locale": "en-AU",
+    "language": "English (Australia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-AU-HayleyRUS",
+    "name": "Hayley",
+    "gender": "female",
+    "locale": "en-AU",
+    "language": "English (Australia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-CA-ClaraNeural",
+    "name": "Clara",
+    "gender": "female",
+    "locale": "en-CA",
+    "language": "English (Canada)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-CA-LiamNeural",
+    "name": "Liam",
+    "gender": "male",
+    "locale": "en-CA",
+    "language": "English (Canada)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-CA-HeatherRUS",
+    "name": "Heather",
+    "gender": "female",
+    "locale": "en-CA",
+    "language": "English (Canada)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-CA-Linda",
+    "name": "Linda",
+    "gender": "female",
+    "locale": "en-CA",
+    "language": "English (Canada)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-GB-SoniaNeural",
+    "name": "Sonia",
+    "gender": "female",
+    "locale": "en-GB",
+    "language": "English (United Kingdom)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "cheerful",
+      "sad"
+    ]
+  },
+  {
+    "id": "en-GB-RyanNeural",
+    "name": "Ryan",
+    "gender": "male",
+    "locale": "en-GB",
+    "language": "English (United Kingdom)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "cheerful",
+      "chat"
+    ]
+  },
+  {
+    "id": "en-GB-LibbyNeural",
+    "name": "Libby",
+    "gender": "female",
+    "locale": "en-GB",
+    "language": "English (United Kingdom)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-GB-AbbiNeural",
+    "name": "Abbi",
+    "gender": "female",
+    "locale": "en-GB",
+    "language": "English (United Kingdom)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-GB-AlfieNeural",
+    "name": "Alfie",
+    "gender": "male",
+    "locale": "en-GB",
+    "language": "English (United Kingdom)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-GB-BellaNeural",
+    "name": "Bella",
+    "gender": "female",
+    "locale": "en-GB",
+    "language": "English (United Kingdom)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-GB-ElliotNeural",
+    "name": "Elliot",
+    "gender": "male",
+    "locale": "en-GB",
+    "language": "English (United Kingdom)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-GB-EthanNeural",
+    "name": "Ethan",
+    "gender": "male",
+    "locale": "en-GB",
+    "language": "English (United Kingdom)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-GB-HollieNeural",
+    "name": "Hollie",
+    "gender": "female",
+    "locale": "en-GB",
+    "language": "English (United Kingdom)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-GB-MaisieNeural",
+    "name": "Maisie",
+    "gender": "female",
+    "locale": "en-GB",
+    "language": "English (United Kingdom)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-GB-NoahNeural",
+    "name": "Noah",
+    "gender": "male",
+    "locale": "en-GB",
+    "language": "English (United Kingdom)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-GB-OliverNeural",
+    "name": "Oliver",
+    "gender": "male",
+    "locale": "en-GB",
+    "language": "English (United Kingdom)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-GB-OliviaNeural",
+    "name": "Olivia",
+    "gender": "female",
+    "locale": "en-GB",
+    "language": "English (United Kingdom)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-GB-ThomasNeural",
+    "name": "Thomas",
+    "gender": "male",
+    "locale": "en-GB",
+    "language": "English (United Kingdom)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-GB-MiaNeural",
+    "name": "Mia",
+    "gender": "female",
+    "locale": "en-GB",
+    "language": "English (United Kingdom)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-GB-George",
+    "name": "George",
+    "gender": "male",
+    "locale": "en-GB",
+    "language": "English (United Kingdom)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-GB-HazelRUS",
+    "name": "Hazel",
+    "gender": "female",
+    "locale": "en-GB",
+    "language": "English (United Kingdom)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-GB-Susan",
+    "name": "Susan",
+    "gender": "female",
+    "locale": "en-GB",
+    "language": "English (United Kingdom)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-HK-YanNeural",
+    "name": "Yan",
+    "gender": "female",
+    "locale": "en-HK",
+    "language": "English (Hong Kong SAR)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-HK-SamNeural",
+    "name": "Sam",
+    "gender": "male",
+    "locale": "en-HK",
+    "language": "English (Hong Kong SAR)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-IE-EmilyNeural",
+    "name": "Emily",
+    "gender": "female",
+    "locale": "en-IE",
+    "language": "English (Ireland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-IE-ConnorNeural",
+    "name": "Connor",
+    "gender": "male",
+    "locale": "en-IE",
+    "language": "English (Ireland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-IE-Sean",
+    "name": "Sean",
+    "gender": "male",
+    "locale": "en-IE",
+    "language": "English (Ireland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-IN-NeerjaNeural",
+    "name": "Neerja",
+    "gender": "female",
+    "locale": "en-IN",
+    "language": "English (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-IN-PrabhatNeural",
+    "name": "Prabhat",
+    "gender": "male",
+    "locale": "en-IN",
+    "language": "English (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-IN-Heera",
+    "name": "Heera",
+    "gender": "female",
+    "locale": "en-IN",
+    "language": "English (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-IN-PriyaRUS",
+    "name": "Priya",
+    "gender": "female",
+    "locale": "en-IN",
+    "language": "English (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-IN-Ravi",
+    "name": "Ravi",
+    "gender": "male",
+    "locale": "en-IN",
+    "language": "English (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-KE-AsiliaNeural",
+    "name": "Asilia",
+    "gender": "female",
+    "locale": "en-KE",
+    "language": "English (Kenya)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-KE-ChilembaNeural",
+    "name": "Chilemba",
+    "gender": "male",
+    "locale": "en-KE",
+    "language": "English (Kenya)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-NG-EzinneNeural",
+    "name": "Ezinne",
+    "gender": "female",
+    "locale": "en-NG",
+    "language": "English (Nigeria)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-NG-AbeoNeural",
+    "name": "Abeo",
+    "gender": "male",
+    "locale": "en-NG",
+    "language": "English (Nigeria)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-NZ-MollyNeural",
+    "name": "Molly",
+    "gender": "female",
+    "locale": "en-NZ",
+    "language": "English (New Zealand)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-NZ-MitchellNeural",
+    "name": "Mitchell",
+    "gender": "male",
+    "locale": "en-NZ",
+    "language": "English (New Zealand)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-PH-RosaNeural",
+    "name": "Rosa",
+    "gender": "female",
+    "locale": "en-PH",
+    "language": "English (Philippines)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-PH-JamesNeural",
+    "name": "James",
+    "gender": "male",
+    "locale": "en-PH",
+    "language": "English (Philippines)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-SG-LunaNeural",
+    "name": "Luna",
+    "gender": "female",
+    "locale": "en-SG",
+    "language": "English (Singapore)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-SG-WayneNeural",
+    "name": "Wayne",
+    "gender": "male",
+    "locale": "en-SG",
+    "language": "English (Singapore)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-TZ-ImaniNeural",
+    "name": "Imani",
+    "gender": "female",
+    "locale": "en-TZ",
+    "language": "English (Tanzania)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-TZ-ElimuNeural",
+    "name": "Elimu",
+    "gender": "male",
+    "locale": "en-TZ",
+    "language": "English (Tanzania)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-JennyMultilingualNeural",
+    "name": "Jenny Multilingual",
+    "gender": "female",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-JennyNeural",
+    "name": "Jenny",
+    "gender": "female",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "assistant",
+      "chat",
+      "customerservice",
+      "newscast",
+      "angry",
+      "cheerful",
+      "sad",
+      "excited",
+      "friendly",
+      "terrified",
+      "shouting",
+      "unfriendly",
+      "whispering",
+      "hopeful"
+    ]
+  },
+  {
+    "id": "en-US-GuyNeural",
+    "name": "Guy",
+    "gender": "male",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "newscast",
+      "angry",
+      "cheerful",
+      "sad",
+      "excited",
+      "friendly",
+      "terrified",
+      "shouting",
+      "unfriendly",
+      "whispering",
+      "hopeful"
+    ]
+  },
+  {
+    "id": "en-US-AriaNeural",
+    "name": "Aria",
+    "gender": "female",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "chat",
+      "customerservice",
+      "narration-professional",
+      "newscast-casual",
+      "newscast-formal",
+      "cheerful",
+      "empathetic",
+      "angry",
+      "sad",
+      "excited",
+      "friendly",
+      "terrified",
+      "shouting",
+      "unfriendly",
+      "whispering",
+      "hopeful"
+    ]
+  },
+  {
+    "id": "en-US-DavisNeural",
+    "name": "Davis",
+    "gender": "male",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "chat",
+      "angry",
+      "cheerful",
+      "excited",
+      "friendly",
+      "hopeful",
+      "sad",
+      "shouting",
+      "terrified",
+      "unfriendly",
+      "whispering"
+    ]
+  },
+  {
+    "id": "en-US-AmberNeural",
+    "name": "Amber",
+    "gender": "female",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-AnaNeural",
+    "name": "Ana",
+    "gender": "female",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-AndrewNeural",
+    "name": "Andrew",
+    "gender": "male",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-AshleyNeural",
+    "name": "Ashley",
+    "gender": "female",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-BrandonNeural",
+    "name": "Brandon",
+    "gender": "male",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-BrianNeural",
+    "name": "Brian",
+    "gender": "male",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-ChristopherNeural",
+    "name": "Christopher",
+    "gender": "male",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-CoraNeural",
+    "name": "Cora",
+    "gender": "female",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-ElizabethNeural",
+    "name": "Elizabeth",
+    "gender": "female",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-EmmaNeural",
+    "name": "Emma",
+    "gender": "female",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-EricNeural",
+    "name": "Eric",
+    "gender": "male",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-JacobNeural",
+    "name": "Jacob",
+    "gender": "male",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-JaneNeural",
+    "name": "Jane",
+    "gender": "female",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "angry",
+      "cheerful",
+      "excited",
+      "friendly",
+      "hopeful",
+      "sad",
+      "shouting",
+      "terrified",
+      "unfriendly",
+      "whispering"
+    ]
+  },
+  {
+    "id": "en-US-JasonNeural",
+    "name": "Jason",
+    "gender": "male",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "angry",
+      "cheerful",
+      "excited",
+      "friendly",
+      "hopeful",
+      "sad",
+      "shouting",
+      "terrified",
+      "unfriendly",
+      "whispering"
+    ]
+  },
+  {
+    "id": "en-US-MichelleNeural",
+    "name": "Michelle",
+    "gender": "female",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-MonicaNeural",
+    "name": "Monica",
+    "gender": "female",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-NancyNeural",
+    "name": "Nancy",
+    "gender": "female",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "angry",
+      "cheerful",
+      "excited",
+      "friendly",
+      "hopeful",
+      "sad",
+      "shouting",
+      "terrified",
+      "unfriendly",
+      "whispering"
+    ]
+  },
+  {
+    "id": "en-US-RogerNeural",
+    "name": "Roger",
+    "gender": "male",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-SaraNeural",
+    "name": "Sara",
+    "gender": "female",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "angry",
+      "cheerful",
+      "excited",
+      "friendly",
+      "hopeful",
+      "sad",
+      "shouting",
+      "terrified",
+      "unfriendly",
+      "whispering"
+    ]
+  },
+  {
+    "id": "en-US-SteffanNeural",
+    "name": "Steffan",
+    "gender": "male",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-TonyNeural",
+    "name": "Tony",
+    "gender": "male",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "angry",
+      "cheerful",
+      "excited",
+      "friendly",
+      "hopeful",
+      "sad",
+      "shouting",
+      "terrified",
+      "unfriendly",
+      "whispering"
+    ]
+  },
+  {
+    "id": "en-US-AriaRUS",
+    "name": "Aria",
+    "gender": "female",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-BenjaminRUS",
+    "name": "Benjamin",
+    "gender": "male",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-GuyRUS",
+    "name": "Guy",
+    "gender": "male",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-US-ZiraRUS",
+    "name": "Zira",
+    "gender": "female",
+    "locale": "en-US",
+    "language": "English (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-ZA-LeahNeural",
+    "name": "Leah",
+    "gender": "female",
+    "locale": "en-ZA",
+    "language": "English (South Africa)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "en-ZA-LukeNeural",
+    "name": "Luke",
+    "gender": "male",
+    "locale": "en-ZA",
+    "language": "English (South Africa)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-AR-ElenaNeural",
+    "name": "Elena",
+    "gender": "female",
+    "locale": "es-AR",
+    "language": "Spanish (Argentina)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-AR-TomasNeural",
+    "name": "Tomas",
+    "gender": "male",
+    "locale": "es-AR",
+    "language": "Spanish (Argentina)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-BO-SofiaNeural",
+    "name": "Sofia",
+    "gender": "female",
+    "locale": "es-BO",
+    "language": "Spanish (Bolivia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-BO-MarceloNeural",
+    "name": "Marcelo",
+    "gender": "male",
+    "locale": "es-BO",
+    "language": "Spanish (Bolivia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-CL-CatalinaNeural",
+    "name": "Catalina",
+    "gender": "female",
+    "locale": "es-CL",
+    "language": "Spanish (Chile)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-CL-LorenzoNeural",
+    "name": "Lorenzo",
+    "gender": "male",
+    "locale": "es-CL",
+    "language": "Spanish (Chile)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-CO-SalomeNeural",
+    "name": "Salome",
+    "gender": "female",
+    "locale": "es-CO",
+    "language": "Spanish (Colombia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-CO-GonzaloNeural",
+    "name": "Gonzalo",
+    "gender": "male",
+    "locale": "es-CO",
+    "language": "Spanish (Colombia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-CR-MariaNeural",
+    "name": "Maria",
+    "gender": "female",
+    "locale": "es-CR",
+    "language": "Spanish (Costa Rica)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-CR-JuanNeural",
+    "name": "Juan",
+    "gender": "male",
+    "locale": "es-CR",
+    "language": "Spanish (Costa Rica)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-CU-BelkysNeural",
+    "name": "Belkys",
+    "gender": "female",
+    "locale": "es-CU",
+    "language": "Spanish (Cuba)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-CU-ManuelNeural",
+    "name": "Manuel",
+    "gender": "male",
+    "locale": "es-CU",
+    "language": "Spanish (Cuba)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-DO-RamonaNeural",
+    "name": "Ramona",
+    "gender": "female",
+    "locale": "es-DO",
+    "language": "Spanish (Dominican Republic)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-DO-EmilioNeural",
+    "name": "Emilio",
+    "gender": "male",
+    "locale": "es-DO",
+    "language": "Spanish (Dominican Republic)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-EC-AndreaNeural",
+    "name": "Andrea",
+    "gender": "female",
+    "locale": "es-EC",
+    "language": "Spanish (Ecuador)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-EC-LuisNeural",
+    "name": "Luis",
+    "gender": "male",
+    "locale": "es-EC",
+    "language": "Spanish (Ecuador)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-ES-ElviraNeural",
+    "name": "Elvira",
+    "gender": "female",
+    "locale": "es-ES",
+    "language": "Spanish (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-ES-AlvaroNeural",
+    "name": "Alvaro",
+    "gender": "male",
+    "locale": "es-ES",
+    "language": "Spanish (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-ES-AbrilNeural",
+    "name": "Abril",
+    "gender": "female",
+    "locale": "es-ES",
+    "language": "Spanish (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-ES-ArnauNeural",
+    "name": "Arnau",
+    "gender": "male",
+    "locale": "es-ES",
+    "language": "Spanish (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-ES-DarioNeural",
+    "name": "Dario",
+    "gender": "male",
+    "locale": "es-ES",
+    "language": "Spanish (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-ES-EliasNeural",
+    "name": "Elias",
+    "gender": "male",
+    "locale": "es-ES",
+    "language": "Spanish (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-ES-EstrellaNeural",
+    "name": "Estrella",
+    "gender": "female",
+    "locale": "es-ES",
+    "language": "Spanish (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-ES-IreneNeural",
+    "name": "Irene",
+    "gender": "female",
+    "locale": "es-ES",
+    "language": "Spanish (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-ES-LaiaNeural",
+    "name": "Laia",
+    "gender": "female",
+    "locale": "es-ES",
+    "language": "Spanish (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-ES-LiaNeural",
+    "name": "Lia",
+    "gender": "female",
+    "locale": "es-ES",
+    "language": "Spanish (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-ES-NilNeural",
+    "name": "Nil",
+    "gender": "male",
+    "locale": "es-ES",
+    "language": "Spanish (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-ES-SaulNeural",
+    "name": "Saul",
+    "gender": "male",
+    "locale": "es-ES",
+    "language": "Spanish (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-ES-TeoNeural",
+    "name": "Teo",
+    "gender": "male",
+    "locale": "es-ES",
+    "language": "Spanish (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-ES-TrianaNeural",
+    "name": "Triana",
+    "gender": "female",
+    "locale": "es-ES",
+    "language": "Spanish (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-ES-VeraNeural",
+    "name": "Vera",
+    "gender": "female",
+    "locale": "es-ES",
+    "language": "Spanish (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-ES-HelenaRUS",
+    "name": "Helena",
+    "gender": "female",
+    "locale": "es-ES",
+    "language": "Spanish (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-ES-Laura",
+    "name": "Laura",
+    "gender": "female",
+    "locale": "es-ES",
+    "language": "Spanish (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-ES-Pablo",
+    "name": "Pablo",
+    "gender": "male",
+    "locale": "es-ES",
+    "language": "Spanish (Spain)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-GQ-TeresaNeural",
+    "name": "Teresa",
+    "gender": "female",
+    "locale": "es-GQ",
+    "language": "Spanish (Equatorial Guinea)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-GQ-JavierNeural",
+    "name": "Javier",
+    "gender": "male",
+    "locale": "es-GQ",
+    "language": "Spanish (Equatorial Guinea)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-GT-MartaNeural",
+    "name": "Marta",
+    "gender": "female",
+    "locale": "es-GT",
+    "language": "Spanish (Guatemala)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-GT-AndresNeural",
+    "name": "Andres",
+    "gender": "male",
+    "locale": "es-GT",
+    "language": "Spanish (Guatemala)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-HN-KarlaNeural",
+    "name": "Karla",
+    "gender": "female",
+    "locale": "es-HN",
+    "language": "Spanish (Honduras)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-HN-CarlosNeural",
+    "name": "Carlos",
+    "gender": "male",
+    "locale": "es-HN",
+    "language": "Spanish (Honduras)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-MX-DaliaNeural",
+    "name": "Dalia",
+    "gender": "female",
+    "locale": "es-MX",
+    "language": "Spanish (Mexico)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-MX-JorgeNeural",
+    "name": "Jorge",
+    "gender": "male",
+    "locale": "es-MX",
+    "language": "Spanish (Mexico)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "cheerful",
+      "chat"
+    ]
+  },
+  {
+    "id": "es-MX-BeatrizNeural",
+    "name": "Beatriz",
+    "gender": "female",
+    "locale": "es-MX",
+    "language": "Spanish (Mexico)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-MX-CandelaNeural",
+    "name": "Candela",
+    "gender": "female",
+    "locale": "es-MX",
+    "language": "Spanish (Mexico)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-MX-CarlotaNeural",
+    "name": "Carlota",
+    "gender": "female",
+    "locale": "es-MX",
+    "language": "Spanish (Mexico)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-MX-CecilioNeural",
+    "name": "Cecilio",
+    "gender": "male",
+    "locale": "es-MX",
+    "language": "Spanish (Mexico)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-MX-GerardoNeural",
+    "name": "Gerardo",
+    "gender": "male",
+    "locale": "es-MX",
+    "language": "Spanish (Mexico)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-MX-LarissaNeural",
+    "name": "Larissa",
+    "gender": "female",
+    "locale": "es-MX",
+    "language": "Spanish (Mexico)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-MX-LibertoNeural",
+    "name": "Liberto",
+    "gender": "male",
+    "locale": "es-MX",
+    "language": "Spanish (Mexico)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-MX-LucianoNeural",
+    "name": "Luciano",
+    "gender": "male",
+    "locale": "es-MX",
+    "language": "Spanish (Mexico)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-MX-MarinaNeural",
+    "name": "Marina",
+    "gender": "female",
+    "locale": "es-MX",
+    "language": "Spanish (Mexico)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-MX-NuriaNeural",
+    "name": "Nuria",
+    "gender": "female",
+    "locale": "es-MX",
+    "language": "Spanish (Mexico)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-MX-PelayoNeural",
+    "name": "Pelayo",
+    "gender": "male",
+    "locale": "es-MX",
+    "language": "Spanish (Mexico)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-MX-RenataNeural",
+    "name": "Renata",
+    "gender": "female",
+    "locale": "es-MX",
+    "language": "Spanish (Mexico)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-MX-YagoNeural",
+    "name": "Yago",
+    "gender": "male",
+    "locale": "es-MX",
+    "language": "Spanish (Mexico)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-MX-HildaRUS",
+    "name": "Hilda",
+    "gender": "female",
+    "locale": "es-MX",
+    "language": "Spanish (Mexico)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-MX-Raul",
+    "name": "Raul",
+    "gender": "male",
+    "locale": "es-MX",
+    "language": "Spanish (Mexico)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-NI-YolandaNeural",
+    "name": "Yolanda",
+    "gender": "female",
+    "locale": "es-NI",
+    "language": "Spanish (Nicaragua)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-NI-FedericoNeural",
+    "name": "Federico",
+    "gender": "male",
+    "locale": "es-NI",
+    "language": "Spanish (Nicaragua)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-PA-MargaritaNeural",
+    "name": "Margarita",
+    "gender": "female",
+    "locale": "es-PA",
+    "language": "Spanish (Panama)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-PA-RobertoNeural",
+    "name": "Roberto",
+    "gender": "male",
+    "locale": "es-PA",
+    "language": "Spanish (Panama)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-PE-CamilaNeural",
+    "name": "Camila",
+    "gender": "female",
+    "locale": "es-PE",
+    "language": "Spanish (Peru)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-PE-AlexNeural",
+    "name": "Alex",
+    "gender": "male",
+    "locale": "es-PE",
+    "language": "Spanish (Peru)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-PR-KarinaNeural",
+    "name": "Karina",
+    "gender": "female",
+    "locale": "es-PR",
+    "language": "Spanish (Puerto Rico)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-PR-VictorNeural",
+    "name": "Victor",
+    "gender": "male",
+    "locale": "es-PR",
+    "language": "Spanish (Puerto Rico)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-PY-TaniaNeural",
+    "name": "Tania",
+    "gender": "female",
+    "locale": "es-PY",
+    "language": "Spanish (Paraguay)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-PY-MarioNeural",
+    "name": "Mario",
+    "gender": "male",
+    "locale": "es-PY",
+    "language": "Spanish (Paraguay)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-SV-LorenaNeural",
+    "name": "Lorena",
+    "gender": "female",
+    "locale": "es-SV",
+    "language": "Spanish (El Salvador)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-SV-RodrigoNeural",
+    "name": "Rodrigo",
+    "gender": "male",
+    "locale": "es-SV",
+    "language": "Spanish (El Salvador)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-US-PalomaNeural",
+    "name": "Paloma",
+    "gender": "female",
+    "locale": "es-US",
+    "language": "Spanish (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-US-AlonsoNeural",
+    "name": "Alonso",
+    "gender": "male",
+    "locale": "es-US",
+    "language": "Spanish (United States)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-UY-ValentinaNeural",
+    "name": "Valentina",
+    "gender": "female",
+    "locale": "es-UY",
+    "language": "Spanish (Uruguay)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-UY-MateoNeural",
+    "name": "Mateo",
+    "gender": "male",
+    "locale": "es-UY",
+    "language": "Spanish (Uruguay)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-VE-PaolaNeural",
+    "name": "Paola",
+    "gender": "female",
+    "locale": "es-VE",
+    "language": "Spanish (Venezuela)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "es-VE-SebastianNeural",
+    "name": "Sebastian",
+    "gender": "male",
+    "locale": "es-VE",
+    "language": "Spanish (Venezuela)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "et-EE-AnuNeural",
+    "name": "Anu",
+    "gender": "female",
+    "locale": "et-EE",
+    "language": "Estonian (Estonia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "et-EE-KertNeural",
+    "name": "Kert",
+    "gender": "male",
+    "locale": "et-EE",
+    "language": "Estonian (Estonia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "eu-ES-AinhoaNeural",
+    "name": "Ainhoa",
+    "gender": "female",
+    "locale": "eu-ES",
+    "language": "Basque",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "eu-ES-AnderNeural",
+    "name": "Ander",
+    "gender": "male",
+    "locale": "eu-ES",
+    "language": "Basque",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fa-IR-DilaraNeural",
+    "name": "Dilara",
+    "gender": "female",
+    "locale": "fa-IR",
+    "language": "Persian (Iran)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fa-IR-FaridNeural",
+    "name": "Farid",
+    "gender": "male",
+    "locale": "fa-IR",
+    "language": "Persian (Iran)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fi-FI-SelmaNeural",
+    "name": "Selma",
+    "gender": "female",
+    "locale": "fi-FI",
+    "language": "Finnish (Finland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fi-FI-HarriNeural",
+    "name": "Harri",
+    "gender": "male",
+    "locale": "fi-FI",
+    "language": "Finnish (Finland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fi-FI-NooraNeural",
+    "name": "Noora",
+    "gender": "female",
+    "locale": "fi-FI",
+    "language": "Finnish (Finland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fi-FI-HeidiRUS",
+    "name": "Heidi",
+    "gender": "female",
+    "locale": "fi-FI",
+    "language": "Finnish (Finland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fil-PH-BlessicaNeural",
+    "name": "Blessica",
+    "gender": "female",
+    "locale": "fil-PH",
+    "language": "Filipino (Philippines)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fil-PH-AngeloNeural",
+    "name": "Angelo",
+    "gender": "male",
+    "locale": "fil-PH",
+    "language": "Filipino (Philippines)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-BE-CharlineNeural",
+    "name": "Charline",
+    "gender": "female",
+    "locale": "fr-BE",
+    "language": "French (Belgium)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-BE-GerardNeural",
+    "name": "Gerard",
+    "gender": "male",
+    "locale": "fr-BE",
+    "language": "French (Belgium)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-CA-SylvieNeural",
+    "name": "Sylvie",
+    "gender": "female",
+    "locale": "fr-CA",
+    "language": "French (Canada)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-CA-JeanNeural",
+    "name": "Jean",
+    "gender": "male",
+    "locale": "fr-CA",
+    "language": "French (Canada)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-CA-AntoineNeural",
+    "name": "Antoine",
+    "gender": "male",
+    "locale": "fr-CA",
+    "language": "French (Canada)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-CA-Caroline",
+    "name": "Caroline",
+    "gender": "female",
+    "locale": "fr-CA",
+    "language": "French (Canada)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-CA-HarmonieRUS",
+    "name": "Harmonie",
+    "gender": "female",
+    "locale": "fr-CA",
+    "language": "French (Canada)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-CH-ArianeNeural",
+    "name": "Ariane",
+    "gender": "female",
+    "locale": "fr-CH",
+    "language": "French (Switzerland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-CH-FabriceNeural",
+    "name": "Fabrice",
+    "gender": "male",
+    "locale": "fr-CH",
+    "language": "French (Switzerland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-CH-Guillaume",
+    "name": "Guillaume",
+    "gender": "male",
+    "locale": "fr-CH",
+    "language": "French (Switzerland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-FR-DeniseNeural",
+    "name": "Denise",
+    "gender": "female",
+    "locale": "fr-FR",
+    "language": "French (France)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "cheerful",
+      "sad"
+    ]
+  },
+  {
+    "id": "fr-FR-HenriNeural",
+    "name": "Henri",
+    "gender": "male",
+    "locale": "fr-FR",
+    "language": "French (France)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "cheerful",
+      "sad"
+    ]
+  },
+  {
+    "id": "fr-FR-AlainNeural",
+    "name": "Alain",
+    "gender": "male",
+    "locale": "fr-FR",
+    "language": "French (France)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-FR-BrigitteNeural",
+    "name": "Brigitte",
+    "gender": "female",
+    "locale": "fr-FR",
+    "language": "French (France)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-FR-CelesteNeural",
+    "name": "Celeste",
+    "gender": "female",
+    "locale": "fr-FR",
+    "language": "French (France)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-FR-ClaudeNeural",
+    "name": "Claude",
+    "gender": "male",
+    "locale": "fr-FR",
+    "language": "French (France)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-FR-CoralieNeural",
+    "name": "Coralie",
+    "gender": "female",
+    "locale": "fr-FR",
+    "language": "French (France)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-FR-EloiseNeural",
+    "name": "Eloise",
+    "gender": "female",
+    "locale": "fr-FR",
+    "language": "French (France)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-FR-JacquelineNeural",
+    "name": "Jacqueline",
+    "gender": "female",
+    "locale": "fr-FR",
+    "language": "French (France)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-FR-JeromeNeural",
+    "name": "Jerome",
+    "gender": "male",
+    "locale": "fr-FR",
+    "language": "French (France)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-FR-JosephineNeural",
+    "name": "Josephine",
+    "gender": "female",
+    "locale": "fr-FR",
+    "language": "French (France)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-FR-MauriceNeural",
+    "name": "Maurice",
+    "gender": "male",
+    "locale": "fr-FR",
+    "language": "French (France)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-FR-YvesNeural",
+    "name": "Yves",
+    "gender": "male",
+    "locale": "fr-FR",
+    "language": "French (France)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-FR-YvetteNeural",
+    "name": "Yvette",
+    "gender": "female",
+    "locale": "fr-FR",
+    "language": "French (France)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-FR-HortenseRUS",
+    "name": "Hortense",
+    "gender": "female",
+    "locale": "fr-FR",
+    "language": "French (France)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-FR-Julie",
+    "name": "Julie",
+    "gender": "female",
+    "locale": "fr-FR",
+    "language": "French (France)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "fr-FR-Paul",
+    "name": "Paul",
+    "gender": "male",
+    "locale": "fr-FR",
+    "language": "French (France)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ga-IE-OrlaNeural",
+    "name": "Orla",
+    "gender": "female",
+    "locale": "ga-IE",
+    "language": "Irish (Ireland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ga-IE-ColmNeural",
+    "name": "Colm",
+    "gender": "male",
+    "locale": "ga-IE",
+    "language": "Irish (Ireland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "gl-ES-SabelaNeural",
+    "name": "Sabela",
+    "gender": "female",
+    "locale": "gl-ES",
+    "language": "Galician",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "gl-ES-RoiNeural",
+    "name": "Roi",
+    "gender": "male",
+    "locale": "gl-ES",
+    "language": "Galician",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "gu-IN-DhwaniNeural",
+    "name": "Dhwani",
+    "gender": "female",
+    "locale": "gu-IN",
+    "language": "Gujarati (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "gu-IN-NiranjanNeural",
+    "name": "Niranjan",
+    "gender": "male",
+    "locale": "gu-IN",
+    "language": "Gujarati (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "he-IL-HilaNeural",
+    "name": "Hila",
+    "gender": "female",
+    "locale": "he-IL",
+    "language": "Hebrew (Israel)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "he-IL-AvriNeural",
+    "name": "Avri",
+    "gender": "male",
+    "locale": "he-IL",
+    "language": "Hebrew (Israel)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "he-IL-Asaf",
+    "name": "Asaf",
+    "gender": "male",
+    "locale": "he-IL",
+    "language": "Hebrew (Israel)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "hi-IN-SwaraNeural",
+    "name": "Swara",
+    "gender": "female",
+    "locale": "hi-IN",
+    "language": "Hindi (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "hi-IN-MadhurNeural",
+    "name": "Madhur",
+    "gender": "male",
+    "locale": "hi-IN",
+    "language": "Hindi (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "hi-IN-Hemant",
+    "name": "Hemant",
+    "gender": "male",
+    "locale": "hi-IN",
+    "language": "Hindi (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "hi-IN-Kalpana",
+    "name": "Kalpana",
+    "gender": "female",
+    "locale": "hi-IN",
+    "language": "Hindi (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "hr-HR-GabrijelaNeural",
+    "name": "Gabrijela",
+    "gender": "female",
+    "locale": "hr-HR",
+    "language": "Croatian (Croatia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "hr-HR-SreckoNeural",
+    "name": "Srecko",
+    "gender": "male",
+    "locale": "hr-HR",
+    "language": "Croatian (Croatia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "hr-HR-Matej",
+    "name": "Matej",
+    "gender": "male",
+    "locale": "hr-HR",
+    "language": "Croatian (Croatia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "hu-HU-NoemiNeural",
+    "name": "Noemi",
+    "gender": "female",
+    "locale": "hu-HU",
+    "language": "Hungarian (Hungary)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "hu-HU-TamasNeural",
+    "name": "Tamas",
+    "gender": "male",
+    "locale": "hu-HU",
+    "language": "Hungarian (Hungary)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "hu-HU-Szabolcs",
+    "name": "Szabolcs",
+    "gender": "male",
+    "locale": "hu-HU",
+    "language": "Hungarian (Hungary)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "hy-AM-AnahitNeural",
+    "name": "Anahit",
+    "gender": "female",
+    "locale": "hy-AM",
+    "language": "Armenian (Armenia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "hy-AM-HaykNeural",
+    "name": "Hayk",
+    "gender": "male",
+    "locale": "hy-AM",
+    "language": "Armenian (Armenia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "id-ID-GadisNeural",
+    "name": "Gadis",
+    "gender": "female",
+    "locale": "id-ID",
+    "language": "Indonesian (Indonesia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "id-ID-ArdiNeural",
+    "name": "Ardi",
+    "gender": "male",
+    "locale": "id-ID",
+    "language": "Indonesian (Indonesia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "id-ID-Andika",
+    "name": "Andika",
+    "gender": "male",
+    "locale": "id-ID",
+    "language": "Indonesian (Indonesia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "is-IS-GudrunNeural",
+    "name": "Gudrun",
+    "gender": "female",
+    "locale": "is-IS",
+    "language": "Icelandic (Iceland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "is-IS-GunnarNeural",
+    "name": "Gunnar",
+    "gender": "male",
+    "locale": "is-IS",
+    "language": "Icelandic (Iceland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "it-IT-ElsaNeural",
+    "name": "Elsa",
+    "gender": "female",
+    "locale": "it-IT",
+    "language": "Italian (Italy)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "it-IT-IsabellaNeural",
+    "name": "Isabella",
+    "gender": "female",
+    "locale": "it-IT",
+    "language": "Italian (Italy)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "cheerful",
+      "chat"
+    ]
+  },
+  {
+    "id": "it-IT-DiegoNeural",
+    "name": "Diego",
+    "gender": "male",
+    "locale": "it-IT",
+    "language": "Italian (Italy)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "it-IT-BenignoNeural",
+    "name": "Benigno",
+    "gender": "male",
+    "locale": "it-IT",
+    "language": "Italian (Italy)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "it-IT-CalimeroNeural",
+    "name": "Calimero",
+    "gender": "male",
+    "locale": "it-IT",
+    "language": "Italian (Italy)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "it-IT-CataldoNeural",
+    "name": "Cataldo",
+    "gender": "male",
+    "locale": "it-IT",
+    "language": "Italian (Italy)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "it-IT-FabiolaNeural",
+    "name": "Fabiola",
+    "gender": "female",
+    "locale": "it-IT",
+    "language": "Italian (Italy)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "it-IT-FiammaNeural",
+    "name": "Fiamma",
+    "gender": "female",
+    "locale": "it-IT",
+    "language": "Italian (Italy)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "it-IT-GianniNeural",
+    "name": "Gianni",
+    "gender": "male",
+    "locale": "it-IT",
+    "language": "Italian (Italy)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "it-IT-ImeldaNeural",
+    "name": "Imelda",
+    "gender": "female",
+    "locale": "it-IT",
+    "language": "Italian (Italy)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "it-IT-IrmaNeural",
+    "name": "Irma",
+    "gender": "female",
+    "locale": "it-IT",
+    "language": "Italian (Italy)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "it-IT-LisandroNeural",
+    "name": "Lisandro",
+    "gender": "male",
+    "locale": "it-IT",
+    "language": "Italian (Italy)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "it-IT-PalmiraNeural",
+    "name": "Palmira",
+    "gender": "female",
+    "locale": "it-IT",
+    "language": "Italian (Italy)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "it-IT-PierinaNeural",
+    "name": "Pierina",
+    "gender": "female",
+    "locale": "it-IT",
+    "language": "Italian (Italy)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "it-IT-RinaldoNeural",
+    "name": "Rinaldo",
+    "gender": "male",
+    "locale": "it-IT",
+    "language": "Italian (Italy)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "it-IT-Cosimo",
+    "name": "Cosimo",
+    "gender": "male",
+    "locale": "it-IT",
+    "language": "Italian (Italy)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "it-IT-LuciaRUS",
+    "name": "Lucia",
+    "gender": "female",
+    "locale": "it-IT",
+    "language": "Italian (Italy)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ja-JP-NanamiNeural",
+    "name": "Nanami",
+    "gender": "female",
+    "locale": "ja-JP",
+    "language": "Japanese (Japan)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "chat",
+      "customerservice",
+      "cheerful"
+    ]
+  },
+  {
+    "id": "ja-JP-KeitaNeural",
+    "name": "Keita",
+    "gender": "male",
+    "locale": "ja-JP",
+    "language": "Japanese (Japan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ja-JP-AoiNeural",
+    "name": "Aoi",
+    "gender": "female",
+    "locale": "ja-JP",
+    "language": "Japanese (Japan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ja-JP-DaichiNeural",
+    "name": "Daichi",
+    "gender": "male",
+    "locale": "ja-JP",
+    "language": "Japanese (Japan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ja-JP-MayuNeural",
+    "name": "Mayu",
+    "gender": "female",
+    "locale": "ja-JP",
+    "language": "Japanese (Japan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ja-JP-NaokiNeural",
+    "name": "Naoki",
+    "gender": "male",
+    "locale": "ja-JP",
+    "language": "Japanese (Japan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ja-JP-ShioriNeural",
+    "name": "Shiori",
+    "gender": "female",
+    "locale": "ja-JP",
+    "language": "Japanese (Japan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ja-JP-Ayumi",
+    "name": "Ayumi",
+    "gender": "female",
+    "locale": "ja-JP",
+    "language": "Japanese (Japan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ja-JP-HarukaRUS",
+    "name": "Haruka",
+    "gender": "female",
+    "locale": "ja-JP",
+    "language": "Japanese (Japan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ja-JP-Ichiro",
+    "name": "Ichiro",
+    "gender": "male",
+    "locale": "ja-JP",
+    "language": "Japanese (Japan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "jv-ID-SitiNeural",
+    "name": "Siti",
+    "gender": "female",
+    "locale": "jv-ID",
+    "language": "Javanese (Latin, Indonesia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "jv-ID-DimasNeural",
+    "name": "Dimas",
+    "gender": "male",
+    "locale": "jv-ID",
+    "language": "Javanese (Latin, Indonesia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ka-GE-EkaNeural",
+    "name": "Eka",
+    "gender": "female",
+    "locale": "ka-GE",
+    "language": "Georgian (Georgia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ka-GE-GiorgiNeural",
+    "name": "Giorgi",
+    "gender": "male",
+    "locale": "ka-GE",
+    "language": "Georgian (Georgia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "kk-KZ-AigulNeural",
+    "name": "Aigul",
+    "gender": "female",
+    "locale": "kk-KZ",
+    "language": "Kazakh (Kazakhstan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "kk-KZ-DauletNeural",
+    "name": "Daulet",
+    "gender": "male",
+    "locale": "kk-KZ",
+    "language": "Kazakh (Kazakhstan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "km-KH-SreymomNeural",
+    "name": "Sreymom",
+    "gender": "female",
+    "locale": "km-KH",
+    "language": "Khmer (Cambodia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "km-KH-PisethNeural",
+    "name": "Piseth",
+    "gender": "male",
+    "locale": "km-KH",
+    "language": "Khmer (Cambodia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "kn-IN-SapnaNeural",
+    "name": "Sapna",
+    "gender": "female",
+    "locale": "kn-IN",
+    "language": "Kannada (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "kn-IN-GaganNeural",
+    "name": "Gagan",
+    "gender": "male",
+    "locale": "kn-IN",
+    "language": "Kannada (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ko-KR-SunHiNeural",
+    "name": "Sun-Hi",
+    "gender": "female",
+    "locale": "ko-KR",
+    "language": "Korean (Korea)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ko-KR-InJoonNeural",
+    "name": "InJoon",
+    "gender": "male",
+    "locale": "ko-KR",
+    "language": "Korean (Korea)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ko-KR-BongJinNeural",
+    "name": "BongJin",
+    "gender": "male",
+    "locale": "ko-KR",
+    "language": "Korean (Korea)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ko-KR-GookMinNeural",
+    "name": "GookMin",
+    "gender": "male",
+    "locale": "ko-KR",
+    "language": "Korean (Korea)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ko-KR-JiMinNeural",
+    "name": "JiMin",
+    "gender": "female",
+    "locale": "ko-KR",
+    "language": "Korean (Korea)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ko-KR-SeoHyeonNeural",
+    "name": "SeoHyeon",
+    "gender": "female",
+    "locale": "ko-KR",
+    "language": "Korean (Korea)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ko-KR-SoonBokNeural",
+    "name": "SoonBok",
+    "gender": "female",
+    "locale": "ko-KR",
+    "language": "Korean (Korea)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ko-KR-YuJinNeural",
+    "name": "YuJin",
+    "gender": "female",
+    "locale": "ko-KR",
+    "language": "Korean (Korea)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ko-KR-HeamiRUS",
+    "name": "Heami",
+    "gender": "female",
+    "locale": "ko-KR",
+    "language": "Korean (Korea)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "lo-LA-KeomanyNeural",
+    "name": "Keomany",
+    "gender": "female",
+    "locale": "lo-LA",
+    "language": "Lao (Laos)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "lo-LA-ChanthavongNeural",
+    "name": "Chanthavong",
+    "gender": "male",
+    "locale": "lo-LA",
+    "language": "Lao (Laos)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "lt-LT-OnaNeural",
+    "name": "Ona",
+    "gender": "female",
+    "locale": "lt-LT",
+    "language": "Lithuanian (Lithuania)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "lt-LT-LeonasNeural",
+    "name": "Leonas",
+    "gender": "male",
+    "locale": "lt-LT",
+    "language": "Lithuanian (Lithuania)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "lv-LV-EveritaNeural",
+    "name": "Everita",
+    "gender": "female",
+    "locale": "lv-LV",
+    "language": "Latvian (Latvia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "lv-LV-NilsNeural",
+    "name": "Nils",
+    "gender": "male",
+    "locale": "lv-LV",
+    "language": "Latvian (Latvia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "mk-MK-MarijaNeural",
+    "name": "Marija",
+    "gender": "female",
+    "locale": "mk-MK",
+    "language": "Macedonian (North Macedonia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "mk-MK-AleksandarNeural",
+    "name": "Aleksandar",
+    "gender": "male",
+    "locale": "mk-MK",
+    "language": "Macedonian (North Macedonia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ml-IN-SobhanaNeural",
+    "name": "Sobhana",
+    "gender": "female",
+    "locale": "ml-IN",
+    "language": "Malayalam (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ml-IN-MidhunNeural",
+    "name": "Midhun",
+    "gender": "male",
+    "locale": "ml-IN",
+    "language": "Malayalam (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "mn-MN-YesuiNeural",
+    "name": "Yesui",
+    "gender": "female",
+    "locale": "mn-MN",
+    "language": "Mongolian (Mongolia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "mn-MN-BataaNeural",
+    "name": "Bataa",
+    "gender": "male",
+    "locale": "mn-MN",
+    "language": "Mongolian (Mongolia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "mr-IN-AarohiNeural",
+    "name": "Aarohi",
+    "gender": "female",
+    "locale": "mr-IN",
+    "language": "Marathi (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "mr-IN-ManoharNeural",
+    "name": "Manohar",
+    "gender": "male",
+    "locale": "mr-IN",
+    "language": "Marathi (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ms-MY-YasminNeural",
+    "name": "Yasmin",
+    "gender": "female",
+    "locale": "ms-MY",
+    "language": "Malay (Malaysia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ms-MY-OsmanNeural",
+    "name": "Osman",
+    "gender": "male",
+    "locale": "ms-MY",
+    "language": "Malay (Malaysia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ms-MY-Rizwan",
+    "name": "Rizwan",
+    "gender": "male",
+    "locale": "ms-MY",
+    "language": "Malay (Malaysia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "mt-MT-GraceNeural",
+    "name": "Grace",
+    "gender": "female",
+    "locale": "mt-MT",
+    "language": "Maltese (Malta)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "mt-MT-JosephNeural",
+    "name": "Joseph",
+    "gender": "male",
+    "locale": "mt-MT",
+    "language": "Maltese (Malta)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "my-MM-NilarNeural",
+    "name": "Nilar",
+    "gender": "female",
+    "locale": "my-MM",
+    "language": "Burmese (Myanmar)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "my-MM-ThihaNeural",
+    "name": "Thiha",
+    "gender": "male",
+    "locale": "my-MM",
+    "language": "Burmese (Myanmar)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "nb-NO-PernilleNeural",
+    "name": "Pernille",
+    "gender": "female",
+    "locale": "nb-NO",
+    "language": "Norwegian Bokmål (Norway)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "nb-NO-FinnNeural",
+    "name": "Finn",
+    "gender": "male",
+    "locale": "nb-NO",
+    "language": "Norwegian Bokmål (Norway)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "nb-NO-IselinNeural",
+    "name": "Iselin",
+    "gender": "female",
+    "locale": "nb-NO",
+    "language": "Norwegian Bokmål (Norway)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "nb-NO-HuldaRUS",
+    "name": "Hulda",
+    "gender": "female",
+    "locale": "nb-NO",
+    "language": "Norwegian Bokmål (Norway)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ne-NP-HemkalaNeural",
+    "name": "Hemkala",
+    "gender": "female",
+    "locale": "ne-NP",
+    "language": "Nepali (Nepal)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ne-NP-SagarNeural",
+    "name": "Sagar",
+    "gender": "male",
+    "locale": "ne-NP",
+    "language": "Nepali (Nepal)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "nl-BE-DenaNeural",
+    "name": "Dena",
+    "gender": "female",
+    "locale": "nl-BE",
+    "language": "Dutch (Belgium)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "nl-BE-ArnaudNeural",
+    "name": "Arnaud",
+    "gender": "male",
+    "locale": "nl-BE",
+    "language": "Dutch (Belgium)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "nl-NL-FennaNeural",
+    "name": "Fenna",
+    "gender": "female",
+    "locale": "nl-NL",
+    "language": "Dutch (Netherlands)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "nl-NL-MaartenNeural",
+    "name": "Maarten",
+    "gender": "male",
+    "locale": "nl-NL",
+    "language": "Dutch (Netherlands)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "nl-NL-ColetteNeural",
+    "name": "Colette",
+    "gender": "female",
+    "locale": "nl-NL",
+    "language": "Dutch (Netherlands)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "nl-NL-HannaRUS",
+    "name": "Hanna",
+    "gender": "female",
+    "locale": "nl-NL",
+    "language": "Dutch (Netherlands)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pl-PL-AgnieszkaNeural",
+    "name": "Agnieszka",
+    "gender": "female",
+    "locale": "pl-PL",
+    "language": "Polish (Poland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pl-PL-MarekNeural",
+    "name": "Marek",
+    "gender": "male",
+    "locale": "pl-PL",
+    "language": "Polish (Poland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pl-PL-ZofiaNeural",
+    "name": "Zofia",
+    "gender": "female",
+    "locale": "pl-PL",
+    "language": "Polish (Poland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pl-PL-PaulinaRUS",
+    "name": "Paulina",
+    "gender": "female",
+    "locale": "pl-PL",
+    "language": "Polish (Poland)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ps-AF-LatifaNeural",
+    "name": "Latifa",
+    "gender": "female",
+    "locale": "ps-AF",
+    "language": "Pashto (Afghanistan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ps-AF-GulNawazNeural",
+    "name": "Gul Nawaz",
+    "gender": "male",
+    "locale": "ps-AF",
+    "language": "Pashto (Afghanistan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pt-BR-FranciscaNeural",
+    "name": "Francisca",
+    "gender": "female",
+    "locale": "pt-BR",
+    "language": "Portuguese (Brazil)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "calm"
+    ]
+  },
+  {
+    "id": "pt-BR-AntonioNeural",
+    "name": "Antonio",
+    "gender": "male",
+    "locale": "pt-BR",
+    "language": "Portuguese (Brazil)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pt-BR-BrendaNeural",
+    "name": "Brenda",
+    "gender": "female",
+    "locale": "pt-BR",
+    "language": "Portuguese (Brazil)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pt-BR-DonatoNeural",
+    "name": "Donato",
+    "gender": "male",
+    "locale": "pt-BR",
+    "language": "Portuguese (Brazil)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pt-BR-ElzaNeural",
+    "name": "Elza",
+    "gender": "female",
+    "locale": "pt-BR",
+    "language": "Portuguese (Brazil)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pt-BR-FabioNeural",
+    "name": "Fabio",
+    "gender": "male",
+    "locale": "pt-BR",
+    "language": "Portuguese (Brazil)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pt-BR-GiovannaNeural",
+    "name": "Giovanna",
+    "gender": "female",
+    "locale": "pt-BR",
+    "language": "Portuguese (Brazil)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pt-BR-HumbertoNeural",
+    "name": "Humberto",
+    "gender": "male",
+    "locale": "pt-BR",
+    "language": "Portuguese (Brazil)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pt-BR-JulioNeural",
+    "name": "Julio",
+    "gender": "male",
+    "locale": "pt-BR",
+    "language": "Portuguese (Brazil)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pt-BR-LeilaNeural",
+    "name": "Leila",
+    "gender": "female",
+    "locale": "pt-BR",
+    "language": "Portuguese (Brazil)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pt-BR-LeticiaNeural",
+    "name": "Leticia",
+    "gender": "female",
+    "locale": "pt-BR",
+    "language": "Portuguese (Brazil)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pt-BR-ManuelaNeural",
+    "name": "Manuela",
+    "gender": "female",
+    "locale": "pt-BR",
+    "language": "Portuguese (Brazil)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pt-BR-NicolauNeural",
+    "name": "Nicolau",
+    "gender": "male",
+    "locale": "pt-BR",
+    "language": "Portuguese (Brazil)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pt-BR-ValerioNeural",
+    "name": "Valerio",
+    "gender": "male",
+    "locale": "pt-BR",
+    "language": "Portuguese (Brazil)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pt-BR-YaraNeural",
+    "name": "Yara",
+    "gender": "female",
+    "locale": "pt-BR",
+    "language": "Portuguese (Brazil)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pt-BR-Daniel",
+    "name": "Daniel",
+    "gender": "male",
+    "locale": "pt-BR",
+    "language": "Portuguese (Brazil)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pt-BR-HeloisaRUS",
+    "name": "Heloisa",
+    "gender": "female",
+    "locale": "pt-BR",
+    "language": "Portuguese (Brazil)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pt-PT-RaquelNeural",
+    "name": "Raquel",
+    "gender": "female",
+    "locale": "pt-PT",
+    "language": "Portuguese (Portugal)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pt-PT-DuarteNeural",
+    "name": "Duarte",
+    "gender": "male",
+    "locale": "pt-PT",
+    "language": "Portuguese (Portugal)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pt-PT-FernandaNeural",
+    "name": "Fernanda",
+    "gender": "female",
+    "locale": "pt-PT",
+    "language": "Portuguese (Portugal)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "pt-PT-HeliaRUS",
+    "name": "Helia",
+    "gender": "female",
+    "locale": "pt-PT",
+    "language": "Portuguese (Portugal)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ro-RO-AlinaNeural",
+    "name": "Alina",
+    "gender": "female",
+    "locale": "ro-RO",
+    "language": "Romanian (Romania)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ro-RO-EmilNeural",
+    "name": "Emil",
+    "gender": "male",
+    "locale": "ro-RO",
+    "language": "Romanian (Romania)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ro-RO-Andrei",
+    "name": "Andrei",
+    "gender": "male",
+    "locale": "ro-RO",
+    "language": "Romanian (Romania)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ru-RU-SvetlanaNeural",
+    "name": "Svetlana",
+    "gender": "female",
+    "locale": "ru-RU",
+    "language": "Russian (Russia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ru-RU-DmitryNeural",
+    "name": "Dmitry",
+    "gender": "male",
+    "locale": "ru-RU",
+    "language": "Russian (Russia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ru-RU-DariyaNeural",
+    "name": "Dariya",
+    "gender": "female",
+    "locale": "ru-RU",
+    "language": "Russian (Russia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ru-RU-EkaterinaRUS",
+    "name": "Ekaterina",
+    "gender": "female",
+    "locale": "ru-RU",
+    "language": "Russian (Russia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ru-RU-Irina",
+    "name": "Irina",
+    "gender": "female",
+    "locale": "ru-RU",
+    "language": "Russian (Russia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ru-RU-Pavel",
+    "name": "Pavel",
+    "gender": "male",
+    "locale": "ru-RU",
+    "language": "Russian (Russia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "si-LK-ThiliniNeural",
+    "name": "Thilini",
+    "gender": "female",
+    "locale": "si-LK",
+    "language": "Sinhala (Sri Lanka)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "si-LK-SameeraNeural",
+    "name": "Sameera",
+    "gender": "male",
+    "locale": "si-LK",
+    "language": "Sinhala (Sri Lanka)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "sk-SK-ViktoriaNeural",
+    "name": "Viktoria",
+    "gender": "female",
+    "locale": "sk-SK",
+    "language": "Slovak (Slovakia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "sk-SK-LukasNeural",
+    "name": "Lukas",
+    "gender": "male",
+    "locale": "sk-SK",
+    "language": "Slovak (Slovakia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "sk-SK-Filip",
+    "name": "Filip",
+    "gender": "male",
+    "locale": "sk-SK",
+    "language": "Slovak (Slovakia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "sl-SI-PetraNeural",
+    "name": "Petra",
+    "gender": "female",
+    "locale": "sl-SI",
+    "language": "Slovenian (Slovenia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "sl-SI-RokNeural",
+    "name": "Rok",
+    "gender": "male",
+    "locale": "sl-SI",
+    "language": "Slovenian (Slovenia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "sl-SI-Lado",
+    "name": "Lado",
+    "gender": "male",
+    "locale": "sl-SI",
+    "language": "Slovenian (Slovenia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "so-SO-UbaxNeural",
+    "name": "Ubax",
+    "gender": "female",
+    "locale": "so-SO",
+    "language": "Somali (Somalia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "so-SO-MuuseNeural",
+    "name": "Muuse",
+    "gender": "male",
+    "locale": "so-SO",
+    "language": "Somali (Somalia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "sq-AL-AnilaNeural",
+    "name": "Anila",
+    "gender": "female",
+    "locale": "sq-AL",
+    "language": "Albanian (Albania)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "sq-AL-IlirNeural",
+    "name": "Ilir",
+    "gender": "male",
+    "locale": "sq-AL",
+    "language": "Albanian (Albania)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "sr-RS-SophieNeural",
+    "name": "Sophie",
+    "gender": "female",
+    "locale": "sr-RS",
+    "language": "Serbian (Cyrillic, Serbia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "sr-RS-NicholasNeural",
+    "name": "Nicholas",
+    "gender": "male",
+    "locale": "sr-RS",
+    "language": "Serbian (Cyrillic, Serbia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "su-ID-TutiNeural",
+    "name": "Tuti",
+    "gender": "female",
+    "locale": "su-ID",
+    "language": "Sundanese (Indonesia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "su-ID-JajangNeural",
+    "name": "Jajang",
+    "gender": "male",
+    "locale": "su-ID",
+    "language": "Sundanese (Indonesia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "sv-SE-SofieNeural",
+    "name": "Sofie",
+    "gender": "female",
+    "locale": "sv-SE",
+    "language": "Swedish (Sweden)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "sv-SE-MattiasNeural",
+    "name": "Mattias",
+    "gender": "male",
+    "locale": "sv-SE",
+    "language": "Swedish (Sweden)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "sv-SE-HilleviNeural",
+    "name": "Hillevi",
+    "gender": "female",
+    "locale": "sv-SE",
+    "language": "Swedish (Sweden)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "sv-SE-HedvigRUS",
+    "name": "Hedvig",
+    "gender": "female",
+    "locale": "sv-SE",
+    "language": "Swedish (Sweden)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "sw-KE-ZuriNeural",
+    "name": "Zuri",
+    "gender": "female",
+    "locale": "sw-KE",
+    "language": "Swahili (Kenya)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "sw-KE-RafikiNeural",
+    "name": "Rafiki",
+    "gender": "male",
+    "locale": "sw-KE",
+    "language": "Swahili (Kenya)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "sw-TZ-RehemaNeural",
+    "name": "Rehema",
+    "gender": "female",
+    "locale": "sw-TZ",
+    "language": "Swahili (Tanzania)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "sw-TZ-DaudiNeural",
+    "name": "Daudi",
+    "gender": "male",
+    "locale": "sw-TZ",
+    "language": "Swahili (Tanzania)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ta-IN-PallaviNeural",
+    "name": "Pallavi",
+    "gender": "female",
+    "locale": "ta-IN",
+    "language": "Tamil (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ta-IN-ValluvarNeural",
+    "name": "Valluvar",
+    "gender": "male",
+    "locale": "ta-IN",
+    "language": "Tamil (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ta-IN-Valluvar",
+    "name": "Valluvar",
+    "gender": "male",
+    "locale": "ta-IN",
+    "language": "Tamil (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ta-LK-SaranyaNeural",
+    "name": "Saranya",
+    "gender": "female",
+    "locale": "ta-LK",
+    "language": "Tamil (Sri Lanka)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ta-LK-KumarNeural",
+    "name": "Kumar",
+    "gender": "male",
+    "locale": "ta-LK",
+    "language": "Tamil (Sri Lanka)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ta-MY-KaniNeural",
+    "name": "Kani",
+    "gender": "female",
+    "locale": "ta-MY",
+    "language": "Tamil (Malaysia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ta-MY-SuryaNeural",
+    "name": "Surya",
+    "gender": "male",
+    "locale": "ta-MY",
+    "language": "Tamil (Malaysia)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ta-SG-VenbaNeural",
+    "name": "Venba",
+    "gender": "female",
+    "locale": "ta-SG",
+    "language": "Tamil (Singapore)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ta-SG-AnbuNeural",
+    "name": "Anbu",
+    "gender": "male",
+    "locale": "ta-SG",
+    "language": "Tamil (Singapore)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "te-IN-ShrutiNeural",
+    "name": "Shruti",
+    "gender": "female",
+    "locale": "te-IN",
+    "language": "Telugu (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "te-IN-MohanNeural",
+    "name": "Mohan",
+    "gender": "male",
+    "locale": "te-IN",
+    "language": "Telugu (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "te-IN-Chitra",
+    "name": "Chitra",
+    "gender": "female",
+    "locale": "te-IN",
+    "language": "Telugu (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "th-TH-PremwadeeNeural",
+    "name": "Premwadee",
+    "gender": "female",
+    "locale": "th-TH",
+    "language": "Thai (Thailand)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "th-TH-NiwatNeural",
+    "name": "Niwat",
+    "gender": "male",
+    "locale": "th-TH",
+    "language": "Thai (Thailand)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "th-TH-AcharaNeural",
+    "name": "Achara",
+    "gender": "female",
+    "locale": "th-TH",
+    "language": "Thai (Thailand)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "th-TH-Pattara",
+    "name": "Pattara",
+    "gender": "male",
+    "locale": "th-TH",
+    "language": "Thai (Thailand)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "tr-TR-EmelNeural",
+    "name": "Emel",
+    "gender": "female",
+    "locale": "tr-TR",
+    "language": "Turkish (Turkey)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "tr-TR-AhmetNeural",
+    "name": "Ahmet",
+    "gender": "male",
+    "locale": "tr-TR",
+    "language": "Turkish (Turkey)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "tr-TR-SedaRUS",
+    "name": "Seda",
+    "gender": "female",
+    "locale": "tr-TR",
+    "language": "Turkish (Turkey)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "uk-UA-PolinaNeural",
+    "name": "Polina",
+    "gender": "female",
+    "locale": "uk-UA",
+    "language": "Ukrainian (Ukraine)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "uk-UA-OstapNeural",
+    "name": "Ostap",
+    "gender": "male",
+    "locale": "uk-UA",
+    "language": "Ukrainian (Ukraine)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ur-IN-GulNeural",
+    "name": "Gul",
+    "gender": "female",
+    "locale": "ur-IN",
+    "language": "Urdu (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ur-IN-SalmanNeural",
+    "name": "Salman",
+    "gender": "male",
+    "locale": "ur-IN",
+    "language": "Urdu (India)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ur-PK-UzmaNeural",
+    "name": "Uzma",
+    "gender": "female",
+    "locale": "ur-PK",
+    "language": "Urdu (Pakistan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "ur-PK-AsadNeural",
+    "name": "Asad",
+    "gender": "male",
+    "locale": "ur-PK",
+    "language": "Urdu (Pakistan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "uz-UZ-MadinaNeural",
+    "name": "Madina",
+    "gender": "female",
+    "locale": "uz-UZ",
+    "language": "Uzbek (Latin, Uzbekistan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "uz-UZ-SardorNeural",
+    "name": "Sardor",
+    "gender": "male",
+    "locale": "uz-UZ",
+    "language": "Uzbek (Latin, Uzbekistan)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "vi-VN-HoaiMyNeural",
+    "name": "HoaiMy",
+    "gender": "female",
+    "locale": "vi-VN",
+    "language": "Vietnamese (Vietnam)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "vi-VN-NamMinhNeural",
+    "name": "NamMinh",
+    "gender": "male",
+    "locale": "vi-VN",
+    "language": "Vietnamese (Vietnam)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "vi-VN-An",
+    "name": "An",
+    "gender": "male",
+    "locale": "vi-VN",
+    "language": "Vietnamese (Vietnam)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "wuu-CN-XiaotongNeural",
+    "name": "晓彤",
+    "gender": "female",
+    "locale": "wuu-CN",
+    "language": "中文(吴语，简体)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "wuu-CN-YunzheNeural",
+    "name": "云哲",
+    "gender": "male",
+    "locale": "wuu-CN",
+    "language": "中文(吴语，简体)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-CN-XiaoxiaoNeural",
+    "name": "小小",
+    "gender": "female",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "assistant",
+      "chat",
+      "customerservice",
+      "newscast",
+      "affectionate",
+      "angry",
+      "calm",
+      "cheerful",
+      "disgruntled",
+      "fearful",
+      "gentle",
+      "lyrical",
+      "sad",
+      "serious",
+      "poetry-reading",
+      "friendly",
+      "chat-casual",
+      "whisper",
+      "sorry"
+    ]
+  },
+  {
+    "id": "zh-CN-YunxiNeural",
+    "name": "云希",
+    "gender": "male",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "narration-relaxed",
+      "embarrassed",
+      "fearful",
+      "cheerful",
+      "disgruntled",
+      "serious",
+      "angry",
+      "sad",
+      "depressed",
+      "chat",
+      "assistant",
+      "newscast"
+    ]
+  },
+  {
+    "id": "zh-CN-YunjianNeural",
+    "name": "云健",
+    "gender": "male",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "narration-relaxed",
+      "sports-commentary",
+      "sports-commentary-excited",
+      "angry",
+      "disgruntled",
+      "cheerful",
+      "sad",
+      "serious",
+      "depressed",
+      "documentary-narration"
+    ]
+  },
+  {
+    "id": "zh-CN-XiaoyiNeural",
+    "name": "晓伊",
+    "gender": "female",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "angry",
+      "disgruntled",
+      "affectionate",
+      "cheerful",
+      "fearful",
+      "sad",
+      "embarrassed",
+      "serious",
+      "gentle"
+    ]
+  },
+  {
+    "id": "zh-CN-YunyangNeural",
+    "name": "云扬",
+    "gender": "male",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "customerservice",
+      "narration-professional",
+      "newscast-casual"
+    ]
+  },
+  {
+    "id": "zh-CN-XiaochenNeural",
+    "name": "晓辰",
+    "gender": "female",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "livecommercial",
+      "poetry-reading"
+    ]
+  },
+  {
+    "id": "zh-CN-XiaohanNeural",
+    "name": "晓涵",
+    "gender": "female",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "calm",
+      "fearful",
+      "cheerful",
+      "disgruntled",
+      "serious",
+      "angry",
+      "sad",
+      "gentle",
+      "affectionate",
+      "embarrassed"
+    ]
+  },
+  {
+    "id": "zh-CN-XiaomengNeural",
+    "name": "晓梦",
+    "gender": "female",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "chat"
+    ]
+  },
+  {
+    "id": "zh-CN-XiaomoNeural",
+    "name": "晓墨",
+    "gender": "female",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "embarrassed",
+      "calm",
+      "fearful",
+      "cheerful",
+      "disgruntled",
+      "serious",
+      "angry",
+      "sad",
+      "depressed",
+      "affectionate",
+      "gentle",
+      "envious"
+    ]
+  },
+  {
+    "id": "zh-CN-XiaoqiuNeural",
+    "name": "晓秋",
+    "gender": "female",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-CN-XiaoruiNeural",
+    "name": "晓睿",
+    "gender": "female",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "calm",
+      "fearful",
+      "angry",
+      "sad"
+    ]
+  },
+  {
+    "id": "zh-CN-XiaoshuangNeural",
+    "name": "晓双",
+    "gender": "female",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "chat"
+    ]
+  },
+  {
+    "id": "zh-CN-XiaoxuanNeural",
+    "name": "晓萱",
+    "gender": "female",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "calm",
+      "fearful",
+      "cheerful",
+      "disgruntled",
+      "serious",
+      "angry",
+      "gentle",
+      "depressed"
+    ]
+  },
+  {
+    "id": "zh-CN-XiaoyanNeural",
+    "name": "晓颜",
+    "gender": "female",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-CN-XiaoyouNeural",
+    "name": "晓悠",
+    "gender": "female",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-CN-XiaozhenNeural",
+    "name": "晓甄",
+    "gender": "female",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "angry",
+      "disgruntled",
+      "cheerful",
+      "fearful",
+      "sad",
+      "serious"
+    ]
+  },
+  {
+    "id": "zh-CN-YunfengNeural",
+    "name": "云枫",
+    "gender": "male",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "angry",
+      "disgruntled",
+      "cheerful",
+      "fearful",
+      "sad",
+      "serious",
+      "depressed"
+    ]
+  },
+  {
+    "id": "zh-CN-YunhaoNeural",
+    "name": "云皓",
+    "gender": "male",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "advertisement-upbeat"
+    ]
+  },
+  {
+    "id": "zh-CN-YunxiaNeural",
+    "name": "云夏",
+    "gender": "male",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "calm",
+      "fearful",
+      "cheerful",
+      "angry",
+      "sad"
+    ]
+  },
+  {
+    "id": "zh-CN-YunyeNeural",
+    "name": "云野",
+    "gender": "male",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "embarrassed",
+      "calm",
+      "fearful",
+      "cheerful",
+      "disgruntled",
+      "serious",
+      "angry",
+      "sad"
+    ]
+  },
+  {
+    "id": "zh-CN-YunzeNeural",
+    "name": "云泽",
+    "gender": "male",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft",
+    "styles": [
+      "calm",
+      "fearful",
+      "cheerful",
+      "disgruntled",
+      "serious",
+      "angry",
+      "sad",
+      "depressed",
+      "documentary-narration"
+    ]
+  },
+  {
+    "id": "zh-CN-HuihuiRUS",
+    "name": "慧慧",
+    "gender": "female",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-CN-Kangkang",
+    "name": "康康",
+    "gender": "male",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-CN-Yaoyao",
+    "name": "瑶瑶",
+    "gender": "female",
+    "locale": "zh-CN",
+    "language": "中文(普通话，简体)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-CN-henan-YundengNeural",
+    "name": "云登",
+    "gender": "male",
+    "locale": "zh-CN-henan",
+    "language": "中文(中原官话河南，简体)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-CN-liaoning-XiaobeiNeural",
+    "name": "晓北",
+    "gender": "female",
+    "locale": "zh-CN-liaoning",
+    "language": "中文(东北官话，简体)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-CN-shaanxi-XiaoniNeural",
+    "name": "晓妮",
+    "gender": "female",
+    "locale": "zh-CN-shaanxi",
+    "language": "中文(中原官话陕西，简体)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-CN-shandong-YunxiangNeural",
+    "name": "云翔",
+    "gender": "male",
+    "locale": "zh-CN-shandong",
+    "language": "中文(冀鲁官话，简体)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-CN-sichuan-YunxiNeural",
+    "name": "云希",
+    "gender": "male",
+    "locale": "zh-CN-sichuan",
+    "language": "中文(西南官话，简体)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-HK-HiuMaanNeural",
+    "name": "胡曼",
+    "gender": "female",
+    "locale": "zh-HK",
+    "language": "中文(粤语，繁体)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-HK-WanLungNeural",
+    "name": "WanLung",
+    "gender": "male",
+    "locale": "zh-HK",
+    "language": "中文(粤语，繁体)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-HK-HiuGaaiNeural",
+    "name": "HiuGaai",
+    "gender": "female",
+    "locale": "zh-HK",
+    "language": "中文(粤语，繁体)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-HK-Danny",
+    "name": "Danny",
+    "gender": "male",
+    "locale": "zh-HK",
+    "language": "中文(粤语，繁体)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-HK-TracyRUS",
+    "name": "Tracy",
+    "gender": "female",
+    "locale": "zh-HK",
+    "language": "中文(粤语，繁体)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-TW-HsiaoChenNeural",
+    "name": "陈萧",
+    "gender": "female",
+    "locale": "zh-TW",
+    "language": "中文(台湾普通话)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-TW-YunJheNeural",
+    "name": "YunJhe",
+    "gender": "male",
+    "locale": "zh-TW",
+    "language": "中文(台湾普通话)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-TW-HsiaoYuNeural",
+    "name": "HsiaoYu",
+    "gender": "female",
+    "locale": "zh-TW",
+    "language": "中文(台湾普通话)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-TW-HanHanRUS",
+    "name": "HanHan",
+    "gender": "female",
+    "locale": "zh-TW",
+    "language": "中文(台湾普通话)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-TW-Yating",
+    "name": "雅婷",
+    "gender": "female",
+    "locale": "zh-TW",
+    "language": "中文(台湾普通话)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zh-TW-Zhiwei",
+    "name": "志伟",
+    "gender": "male",
+    "locale": "zh-TW",
+    "language": "中文(台湾普通话)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zu-ZA-ThandoNeural",
+    "name": "Thando",
+    "gender": "female",
+    "locale": "zu-ZA",
+    "language": "Zulu (South Africa)",
+    "access": "public",
+    "provider": "microsoft"
+  },
+  {
+    "id": "zu-ZA-ThembaNeural",
+    "name": "Themba",
+    "gender": "male",
+    "locale": "zu-ZA",
+    "language": "Zulu (South Africa)",
+    "access": "public",
+    "provider": "microsoft"
+  }
+]

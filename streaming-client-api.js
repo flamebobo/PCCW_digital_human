@@ -19,6 +19,7 @@ let selectedPresenterPosterUrl = '';  // 数字人头像
 let selectedEmotion = 'neutral'; // 情绪默认值
 let selectedIntensity = 0.5;
 let selectedVoiceId = 'zh-cn-XiaomoNeural'; // 声音默认值
+let selectedStyle = 'assistant'; // 说话风格默认为空
 
 // 情绪和强度的映射
 const emotionsWithIntensity = {
@@ -49,6 +50,39 @@ const peerStatusLabel = document.getElementById('peer-status-label');
 const iceStatusLabel = document.getElementById('ice-status-label');
 const iceGatheringStatusLabel = document.getElementById('ice-gathering-status-label');
 const signalingStatusLabel = document.getElementById('signaling-status-label');
+
+const stylesTranslations = {
+  'assistant': '助手',
+  'chat': '聊天',
+  'customerservice': '客服',
+  'newscast': '新闻播报',
+  'affectionate': '亲密',
+  'angry': '愤怒',
+  'calm': '平静',
+  'cheerful': '愉快',
+  'disgruntled': '不满',
+  'fearful': '恐惧',
+  'gentle': '温柔',
+  'lyrical': '抒情',
+  'sad': '悲伤',
+  'serious': '严肃',
+  'poetry-reading': '朗读诗歌',
+  'friendly': '友好',
+  'chat-casual': '随便聊',
+  'whisper': '耳语',
+  'sorry': '抱歉',
+  'narration-relaxed': '松弛',
+  'embarrassed':'尴尬',
+  'depressed':'沮丧',
+  'sports-commentary':'体育评论',
+  'sports-commentary-excited':'体育解说兴奋',
+  'documentary-narration':'纪实叙事',
+  'narration-professional':'叙事专业',
+  'newscast-casual':'新闻广播-休闲',
+  'livecommercial':'商业生活',
+  'advertisement-upbeat':'广告-乐观',
+  'envious':'羡慕'
+};
 
 // 连接按钮点击事件处理函数
 const connectButton = document.getElementById('connect-button');
@@ -98,7 +132,7 @@ connectButton.onclick = async () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   loadPresenters();
-
+  loadVoiceOptions(); // 加载声音选项
 
   // 绑定关闭按钮事件
   document.getElementById('close-btn').addEventListener('click', function() {
@@ -136,6 +170,55 @@ async function loadPresenters() {
   });
 }
 
+async function loadVoiceOptions() {
+  const response = await fetch('./voices.json');
+  const voices = await response.json();
+  const chineseVoices = voices.filter(voice => voice.language.includes('中文'));
+
+  const voiceOptionsContainer = document.getElementById('voice-options');
+  voiceOptionsContainer.innerHTML = ''; // 清空现有选项
+
+  chineseVoices.forEach(voice => {
+    const value = voice.id;
+    const label = translateVoiceLabel(voice.language, voice.name); // 调用翻译函数
+    createOption(voiceOptionsContainer, label, value, 'voice');
+  });
+
+  // 声音选择的事件处理器
+  document.getElementById('voice-options').addEventListener('click', function(event) {
+    if (event.target && event.target.matches('.option')) {
+      const selectedVoiceId = event.target.getAttribute('data-value');
+      const selectedVoice = voices.find(voice => voice.id === selectedVoiceId);
+      if (selectedVoice && selectedVoice.styles) {
+        updateSpeakingStyles(selectedVoice.styles);
+      }else {
+        const speakingStylesContainer = document.getElementById('speaking-options');
+        speakingStylesContainer.innerHTML = ''; // 清空现有的选项
+      }
+    }
+  });
+
+}
+
+function translateVoiceLabel(language, name) {
+  const languageMap = {
+    'Chinese (Taiwanese Mandarin, Traditional)': '中文台湾普通话',
+    'Chinese (Mandarin, Simplified)': '中文大陆普通话',
+    // 添加其他语言映射
+  };
+
+  const nameMap = {
+    'Zhiwei': '志伟',
+    'Yating': '雅婷',
+    // 添加其他名字映射
+  };
+
+  const translatedLanguage = languageMap[language.split(' ')[0]] || language.split(' ')[0];
+  const translatedName = nameMap[name] || name;
+  return `${translatedLanguage}-${translatedName}`;
+}
+
+
 document.addEventListener('DOMContentLoaded', () => {
   // ... loadPresenters and other initialization code ...
 
@@ -152,6 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log("selectedPresenterPosterUrl:",selectedPresenterPosterUrl);
     console.log("selectedEmotion:",selectedEmotion);
     console.log("selectedVoiceId:",selectedVoiceId);
+    console.log("models:",openAIConfig.models);
   });
 
   // 绑定演示者选项的点击事件，更新选中的演示者的poster URL
@@ -177,18 +261,29 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Voice options
-  const voices = {'zh-HK-HiuMaanNeural': '粤语小曼', 'zh-cn-XiaomoNeural': '中文小沫'};
-  const voiceOptionsContainer = document.getElementById('voice-options');
-  Object.keys(voices).forEach(voiceKey => {
-    createOption(voiceOptionsContainer, voices[voiceKey], voiceKey, 'voice');
-  });
+  // const voices = {'zh-HK-HiuMaanNeural': '粤语小曼', 'zh-cn-XiaomoNeural': '中文小沫'};
+  // const voiceOptionsContainer = document.getElementById('voice-options');
+  // Object.keys(voices).forEach(voiceKey => {
+  //   createOption(voiceOptionsContainer, voices[voiceKey], voiceKey, 'voice');
+  // });
 
-  const sessions = {'savaSession': '保存会话', 'instantSession': '瞬时会话'};
-  const sessionOptionsContainer = document.getElementById('session-options');
-  Object.keys(sessions).forEach(sessionKey => createOption(sessionOptionsContainer, sessions[sessionKey], sessionKey));
+
+  const models = {'turbo': 'gpt-3.5-turbo', 'davinci': 'text-davinci-003'};
+  const modelOptionsContainer = document.getElementById('model-options');
+  Object.keys(models).forEach(modelKey => createOption(modelOptionsContainer, models[modelKey], modelKey, 'model'));
 
 });
 
+// 更新说话风格选项的函数
+function updateSpeakingStyles(styles) {
+  const speakingStylesContainer = document.getElementById('speaking-options');
+  speakingStylesContainer.innerHTML = ''; // 清空现有的选项
+
+  styles.forEach(style => {
+    const styleChinese = stylesTranslations[style] || style; // 使用翻译，或者如果没有翻译则使用原始值
+    createOption(speakingStylesContainer, styleChinese, style, 'speakingStyle');
+  });
+}
 function createOption(container, label, value, type) {
   const optionDiv = document.createElement('div');
   optionDiv.classList.add('option');
@@ -204,6 +299,15 @@ function createOption(container, label, value, type) {
       selectedEmotion = value;
       selectedIntensity = emotionsWithIntensity[value].intensity;
     }
+    if (type === 'voice') {
+      selectedVoiceId = value; // 更新选中的声音ID
+    }
+    if (type === 'model') {
+      openAIConfig.models = value; // 更新模型
+      console.log(openAIConfig.models);
+    }
+    // 更新 getMessageFromDID 方法中的 style
+    selectedStyle = value; // 假设 selectedStyle 是你用来存储选中风格的变量
   });
 
   container.appendChild(optionDiv);
@@ -351,6 +455,7 @@ async function getMessageFromGPT(userInput) {
 
   // 调用DID
   getMessageFromDID(chatResponse);
+
 }
 // 逐字显示消息的函数
 function typeMessage(message, element) {
@@ -428,7 +533,7 @@ async function getMessageFromDID(chatResponse){
          * 中文：zh-cn-XiaomoNeural
          * 粤语：zh-HK-HiuMaanNeural
          */
-        provider: { type: 'microsoft', voice_id: selectedVoiceId },
+        provider: { type: 'microsoft', voice_id: selectedVoiceId, voice_config: { style: selectedStyle}},
         ssml: true,
         input: chatResponse, // Use the GPT-3 response as the input value
       },

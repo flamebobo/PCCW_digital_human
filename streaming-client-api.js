@@ -29,6 +29,7 @@ const emotionsWithIntensity = {
   'serious': { label: '严肃', intensity: 0.5 }
 };
 
+
 // OpenAI API 配置
 const openAIConfig = {
   apiKey: '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',
@@ -42,7 +43,8 @@ const openAIConfig = {
         `https://api.openai.com/v1/engines/${model}/completions`;
   }
 };
-
+// 新增全局变量来保存用户选择的模型
+let selectedModel = openAIConfig.models.davinci; // 默认为 turbo 模型
 // 获取DOM元素
 const talkVideo = document.getElementById('talk-video');
 talkVideo.setAttribute('playsinline', '');
@@ -256,21 +258,23 @@ document.addEventListener('DOMContentLoaded', () => {
   // Emotion options['neutral', 'happy', 'surprise', 'serious'];
   const emotions = {'neutral': '中性', 'happy':'开心', 'surprise': '惊喜', 'serious':'严肃'};
   const emotionOptionsContainer = document.getElementById('emotion-options');
-  Object.keys(emotionsWithIntensity).forEach(emotionKey => {
-    createOption(emotionOptionsContainer, emotionsWithIntensity[emotionKey].label, emotionKey, 'emotion');
+
+  Object.keys(emotions).forEach(emotionKey => {
+    // 使用 emotions 对象来获取正确的情绪标签
+    const emotionLabel = emotions[emotionKey];
+    const intensity = emotionsWithIntensity[emotionKey]?.intensity || 0.5; // 默认强度为 0.5
+
+    createOption(emotionOptionsContainer, emotionLabel, emotionKey, 'emotion', intensity);
   });
 
-  // Voice options
-  // const voices = {'zh-HK-HiuMaanNeural': '粤语小曼', 'zh-cn-XiaomoNeural': '中文小沫'};
-  // const voiceOptionsContainer = document.getElementById('voice-options');
-  // Object.keys(voices).forEach(voiceKey => {
-  //   createOption(voiceOptionsContainer, voices[voiceKey], voiceKey, 'voice');
-  // });
-
-
-  const models = {'turbo': 'gpt-3.5-turbo', 'davinci': 'text-davinci-003'};
+  const models = {'gpt-3.5-turbo': 'gpt-3.5-turbo', 'text-davinci-003': 'text-davinci-003'};
   const modelOptionsContainer = document.getElementById('model-options');
-  Object.keys(models).forEach(modelKey => createOption(modelOptionsContainer, models[modelKey], modelKey, 'model'));
+
+  Object.keys(models).forEach(modelKey => {
+    // 使用更具可读性的键作为标签（如 'turbo' 或 'davinci'）
+    // 并将实际的模型标识符（如 'gpt-3.5-turbo' 或 'text-davinci-003'）作为值
+    createOption(modelOptionsContainer, modelKey, models[modelKey], 'model');
+  });
 
 });
 
@@ -284,35 +288,39 @@ function updateSpeakingStyles(styles) {
     createOption(speakingStylesContainer, styleChinese, style, 'speakingStyle');
   });
 }
-function createOption(container, label, value, type) {
+function createOption(container, label, value, type, ...additionalArgs) {
   const optionDiv = document.createElement('div');
   optionDiv.classList.add('option');
   optionDiv.textContent = label;
   optionDiv.setAttribute('data-value', value);
 
-  // 选择情绪时更新强度
   optionDiv.addEventListener('click', function() {
     container.querySelectorAll('.option').forEach(opt => opt.classList.remove('selected'));
     this.classList.add('selected');
 
-    if (type === 'emotion') {
-      selectedEmotion = value;
-      selectedIntensity = emotionsWithIntensity[value].intensity;
+    switch (type) {
+      case 'emotion':
+        selectedEmotion = value;
+        selectedIntensity = additionalArgs[0] !== undefined ? additionalArgs[0] : 0.5; // 使用额外参数作为强度
+        break;
+      case 'voice':
+        selectedVoiceId = value;
+        break;
+      case 'model':
+        selectedModel = value;
+        // 切换模型前清空历史消息。
+        conversationHistory = [];
+        console.log("Selected model:", selectedModel);
+        break;
+      case 'style':
+        selectedStyle = value;
+        break;
+        // 其他类型的处理...
     }
-    if (type === 'voice') {
-      selectedVoiceId = value; // 更新选中的声音ID
-    }
-    if (type === 'model') {
-      openAIConfig.models = value; // 更新模型
-      console.log(openAIConfig.models);
-    }
-    // 更新 getMessageFromDID 方法中的 style
-    selectedStyle = value; // 假设 selectedStyle 是你用来存储选中风格的变量
   });
 
   container.appendChild(optionDiv);
 }
-
 
 // 侧边栏开关事件监听
 document.getElementById("sidebar-toggle").addEventListener("click", function() {
@@ -380,13 +388,15 @@ async function callOpenAI(apiUrl, data) {
   }
 }
 
-// 生成聊天回应的函数 - GPT-3.5-turbo
-async function generateChatResponseTurbo(userInput) {
-  const apiUrl = openAIConfig.getChatEndpoint(openAIConfig.models.turbo);
+
+// 修改 generateChatResponseTurbo 函数
+async function generateChatResponseTurbo(userInput, model) {
+  const apiUrl = openAIConfig.getChatEndpoint(model);
   conversationHistory.push({ role: "user", content: userInput });
 
+  console.log("model=========", model)
   const data = {
-    model: openAIConfig.models.turbo,
+    model: model, // 使用传入的模型值
     messages: conversationHistory
   };
 
@@ -394,18 +404,17 @@ async function generateChatResponseTurbo(userInput) {
   return responseData ? responseData.choices[0].message.content : `I'm sorry, I wasn't able to process that.`;
 }
 
-// 生成聊天回应的函数 - text-davinci-003（支持上下文）
-async function generateChatResponseDavinci(userInput) {
-  const apiUrl = openAIConfig.getChatEndpoint(openAIConfig.models.davinci);
+// 修改 generateChatResponseDavinci 函数
+async function generateChatResponseDavinci(userInput, model) {
+  const apiUrl = openAIConfig.getChatEndpoint(model);
 
-  // 将之前的对话历史转换成一个连续的对话字符串
   let conversation = conversationHistory.map(entry => `${entry.role}: ${entry.content}`).join('\n');
-  conversation += `\nUser: ${userInput}\nAI:`; // 添加最新的用户输入
+  conversation += `\nUser: ${userInput}\nAI:`;
 
   const data = {
     prompt: conversation,
     max_tokens: 2000,
-    stop: ["\n", "User:", "AI:"], // 可以指定停止标记，以防止模型生成过多的内容
+    stop: ["\n", "User:", "AI:"],
     temperature: 0.5,
     top_p: 1,
     frequency_penalty: 0,
@@ -413,7 +422,6 @@ async function generateChatResponseDavinci(userInput) {
   };
 
   const responseData = await callOpenAI(apiUrl, data);
-  // 如果我们成功地从API获取了响应，那么我们就添加AI的最新回复到对话历史中
   if (responseData) {
     const aiText = responseData.choices[0].text.trim();
     conversationHistory.push({ role: "ai", content: aiText });
@@ -442,9 +450,17 @@ destroyButton.onclick = async () => {
 // 如果peer connection状态是稳定的或已连接，则使用GPT-3生成回应
 async function getMessageFromGPT(userInput) {
   const chatBox = document.getElementById('chat-box');
-
-  // 异步获取 GPT-3 的响应
-  const chatResponse = await generateChatResponseDavinci(userInput);
+  let chatResponse = '';
+  // 根据选中的模型来调用相应的函数
+  console.log("selectedModel====:", selectedModel)
+  if (selectedModel === openAIConfig.models.turbo) {
+    chatResponse = await generateChatResponseTurbo(userInput, openAIConfig.models.turbo);
+  } else if (selectedModel === openAIConfig.models.davinci) {
+    chatResponse = await generateChatResponseDavinci(userInput, openAIConfig.models.davinci);
+  } else {
+    console.error('No model selected');
+    return;
+  }
 
   // 逐字显示消息
   // 当从GPT获取到响应后
@@ -455,7 +471,6 @@ async function getMessageFromGPT(userInput) {
 
   // 调用DID
   getMessageFromDID(chatResponse);
-
 }
 // 逐字显示消息的函数
 function typeMessage(message, element) {
